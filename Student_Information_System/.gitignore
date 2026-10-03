@@ -1,0 +1,11 @@
+.vs/
+
+# --- Build Artifacts --- 
+# Brought to you by claude and jeff.
+
+[Bb]in/
+[Oo]bj/
+[Xx]64/
+[Xx]88/
+ARM/
+ARM64/
