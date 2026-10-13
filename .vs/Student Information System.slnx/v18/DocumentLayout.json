@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Student Information System\\",
+  "WorkspaceRootPath": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|c:\\users\\jeffl\\onedrive\\documents\\github\\student_information_system\\student information system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|c:\\users\\jeffl\\onedrive\\documents\\github\\student_information_system\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,18 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 64,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T13:12:28.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T12:49:57.38Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Student Information System\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Student Information System\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-03T10:41:44.894Z",
+              "WhenOpened": "2026-10-13T12:34:17.986Z",
               "EditorCaption": " [Design]"
             },
             {
