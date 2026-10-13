@@ -54,6 +54,7 @@
             this.InputStudentID.Name = "InputStudentID";
             this.InputStudentID.Size = new System.Drawing.Size(259, 20);
             this.InputStudentID.TabIndex = 0;
+            this.InputStudentID.TextChanged += new System.EventHandler(this.InputStudentID_TextChanged);
             // 
             // labelStudentID
             // 
@@ -70,6 +71,7 @@
             this.InputFullName.Name = "InputFullName";
             this.InputFullName.Size = new System.Drawing.Size(259, 20);
             this.InputFullName.TabIndex = 2;
+            this.InputFullName.TextChanged += new System.EventHandler(this.InputFullName_TextChanged);
             // 
             // labelName
             // 
@@ -95,6 +97,7 @@
             this.InputGender.Name = "InputGender";
             this.InputGender.Size = new System.Drawing.Size(259, 20);
             this.InputGender.TabIndex = 4;
+            this.InputGender.TextChanged += new System.EventHandler(this.InputGender_TextChanged);
             // 
             // labelYearLevel
             // 
@@ -111,6 +114,7 @@
             this.InputYearLevel.Name = "InputYearLevel";
             this.InputYearLevel.Size = new System.Drawing.Size(259, 20);
             this.InputYearLevel.TabIndex = 6;
+            this.InputYearLevel.TextChanged += new System.EventHandler(this.InputYearLevel_TextChanged);
             // 
             // labelProgram
             // 
@@ -127,6 +131,7 @@
             this.InputProgram.Name = "InputProgram";
             this.InputProgram.Size = new System.Drawing.Size(259, 20);
             this.InputProgram.TabIndex = 8;
+            this.InputProgram.TextChanged += new System.EventHandler(this.InputProgram_TextChanged);
             // 
             // labelContactNumber
             // 
@@ -143,6 +148,7 @@
             this.InputContactNumber.Name = "InputContactNumber";
             this.InputContactNumber.Size = new System.Drawing.Size(259, 20);
             this.InputContactNumber.TabIndex = 10;
+            this.InputContactNumber.TextChanged += new System.EventHandler(this.InputContactNumber_TextChanged);
             // 
             // dataGridView1
             // 
@@ -151,6 +157,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(650, 330);
             this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ClearFieldsButton
             // 
@@ -160,6 +167,7 @@
             this.ClearFieldsButton.TabIndex = 14;
             this.ClearFieldsButton.Text = "Clear";
             this.ClearFieldsButton.UseVisualStyleBackColor = true;
+            this.ClearFieldsButton.Click += new System.EventHandler(this.ClearFieldsButton_Click);
             // 
             // ButtonAdd
             // 
@@ -169,6 +177,7 @@
             this.ButtonAdd.TabIndex = 15;
             this.ButtonAdd.Text = "Add";
             this.ButtonAdd.UseVisualStyleBackColor = true;
+            this.ButtonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
             // 
             // ButtonDelete
             // 
@@ -178,6 +187,7 @@
             this.ButtonDelete.TabIndex = 16;
             this.ButtonDelete.Text = "Delete";
             this.ButtonDelete.UseVisualStyleBackColor = true;
+            this.ButtonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
             // 
             // ButtonEdit
             // 
@@ -187,6 +197,7 @@
             this.ButtonEdit.TabIndex = 17;
             this.ButtonEdit.Text = "Edit";
             this.ButtonEdit.UseVisualStyleBackColor = true;
+            this.ButtonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
             // 
             // Form1
             // 
@@ -212,6 +223,7 @@
             this.Controls.Add(this.InputStudentID);
             this.Name = "Form1";
             this.Text = "Form1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
