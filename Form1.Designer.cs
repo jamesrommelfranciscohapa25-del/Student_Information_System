@@ -40,32 +40,38 @@
             this.InputYearLevel = new System.Windows.Forms.TextBox();
             this.InputProgram = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.DropDownB = new System.Windows.Forms.ComboBox();
             this.DropDownA = new System.Windows.Forms.ComboBox();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ClearFieldsButton = new System.Windows.Forms.Button();
             this.ButtonAdd = new System.Windows.Forms.Button();
             this.ButtonDelete = new System.Windows.Forms.Button();
             this.ButtonEdit = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.HeaderPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // InputStudentID
             // 
             this.InputStudentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputStudentID.Location = new System.Drawing.Point(23, 352);
+            this.InputStudentID.Location = new System.Drawing.Point(23, 300);
             this.InputStudentID.Name = "InputStudentID";
             this.InputStudentID.Size = new System.Drawing.Size(259, 26);
             this.InputStudentID.TabIndex = 0;
@@ -73,10 +79,10 @@
             // 
             // InputFullName
             // 
-            this.InputFullName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.InputFullName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.InputFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputFullName.Location = new System.Drawing.Point(23, 301);
+            this.InputFullName.Location = new System.Drawing.Point(23, 377);
             this.InputFullName.Name = "InputFullName";
             this.InputFullName.Size = new System.Drawing.Size(257, 26);
             this.InputFullName.TabIndex = 2;
@@ -85,7 +91,7 @@
             // InputContactNumber
             // 
             this.InputContactNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputContactNumber.Location = new System.Drawing.Point(23, 573);
+            this.InputContactNumber.Location = new System.Drawing.Point(23, 701);
             this.InputContactNumber.Name = "InputContactNumber";
             this.InputContactNumber.Size = new System.Drawing.Size(259, 26);
             this.InputContactNumber.TabIndex = 10;
@@ -135,6 +141,12 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.InputGender);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.InputStudentID);
@@ -154,13 +166,11 @@
             this.InputGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InputGender.FormattingEnabled = true;
             this.InputGender.Items.AddRange(new object[] {
-            "Cisgender",
-            "Transgender",
-            "Non-binary",
-            "Agender",
-            "Genderfluid",
-            "Bigender/Trigender"});
-            this.InputGender.Location = new System.Drawing.Point(23, 405);
+            "Male",
+            "Female",
+            "Other",
+            "Prefer not to say"});
+            this.InputGender.Location = new System.Drawing.Point(23, 454);
             this.InputGender.Name = "InputGender";
             this.InputGender.Size = new System.Drawing.Size(257, 28);
             this.InputGender.TabIndex = 26;
@@ -168,21 +178,19 @@
             // InputYearLevel
             // 
             this.InputYearLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputYearLevel.Location = new System.Drawing.Point(23, 457);
+            this.InputYearLevel.Location = new System.Drawing.Point(23, 539);
             this.InputYearLevel.Name = "InputYearLevel";
             this.InputYearLevel.Size = new System.Drawing.Size(257, 26);
             this.InputYearLevel.TabIndex = 6;
-            this.InputYearLevel.Text = "Year Level";
             this.InputYearLevel.TextChanged += new System.EventHandler(this.InputYearLevel_TextChanged);
             // 
             // InputProgram
             // 
             this.InputProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputProgram.Location = new System.Drawing.Point(23, 513);
+            this.InputProgram.Location = new System.Drawing.Point(23, 619);
             this.InputProgram.Name = "InputProgram";
             this.InputProgram.Size = new System.Drawing.Size(259, 26);
             this.InputProgram.TabIndex = 8;
-            this.InputProgram.Text = "Program";
             this.InputProgram.TextChanged += new System.EventHandler(this.InputProgram_TextChanged);
             // 
             // panel3
@@ -198,42 +206,14 @@
             this.panel3.Size = new System.Drawing.Size(1124, 841);
             this.panel3.TabIndex = 22;
             // 
-            // panel5
+            // panel7
             // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.dataGridView1);
-            this.panel5.Controls.Add(this.ClearFieldsButton);
-            this.panel5.Controls.Add(this.ButtonAdd);
-            this.panel5.Controls.Add(this.ButtonDelete);
-            this.panel5.Controls.Add(this.ButtonEdit);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 80);
-            this.panel5.Margin = new System.Windows.Forms.Padding(10);
-            this.panel5.Name = "panel5";
-            this.panel5.Padding = new System.Windows.Forms.Padding(20);
-            this.panel5.Size = new System.Drawing.Size(1122, 759);
-            this.panel5.TabIndex = 24;
-            // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1122, 80);
-            this.panel4.TabIndex = 23;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(42, 26);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(316, 30);
-            this.textBox1.TabIndex = 19;
-            this.textBox1.Text = "Search Name or Student ID";
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel7.Location = new System.Drawing.Point(0, 768);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1122, 71);
+            this.panel7.TabIndex = 27;
             // 
             // panel6
             // 
@@ -244,14 +224,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1122, 80);
             this.panel6.TabIndex = 26;
-            // 
-            // panel7
-            // 
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 768);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1122, 71);
-            this.panel7.TabIndex = 27;
             // 
             // DropDownB
             // 
@@ -278,6 +250,22 @@
             this.DropDownA.Size = new System.Drawing.Size(183, 28);
             this.DropDownA.TabIndex = 26;
             // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.dataGridView1);
+            this.panel5.Controls.Add(this.ClearFieldsButton);
+            this.panel5.Controls.Add(this.ButtonAdd);
+            this.panel5.Controls.Add(this.ButtonDelete);
+            this.panel5.Controls.Add(this.ButtonEdit);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 80);
+            this.panel5.Margin = new System.Windows.Forms.Padding(10);
+            this.panel5.Name = "panel5";
+            this.panel5.Padding = new System.Windows.Forms.Padding(20);
+            this.panel5.Size = new System.Drawing.Size(1122, 759);
+            this.panel5.TabIndex = 24;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowDrop = true;
@@ -287,7 +275,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(964, 528);
             this.dataGridView1.TabIndex = 28;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ClearFieldsButton
             // 
@@ -341,6 +328,87 @@
             this.ButtonEdit.UseVisualStyleBackColor = true;
             this.ButtonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
             // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1122, 80);
+            this.panel4.TabIndex = 23;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(42, 26);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(316, 30);
+            this.textBox1.TabIndex = 19;
+            this.textBox1.Text = "Search Name or Student ID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(19, 277);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 20);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Student ID:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(19, 354);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(116, 20);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Student Name:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(19, 431);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 20);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Gender:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(19, 516);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(88, 20);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "Year Level:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(19, 596);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 20);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Program:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(19, 678);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(129, 20);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Contact Number:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -352,18 +420,17 @@
             this.Controls.Add(this.HeaderPanel);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.HeaderPanel.ResumeLayout(false);
             this.HeaderPanel.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -394,5 +461,11 @@
         private System.Windows.Forms.Button ButtonAdd;
         private System.Windows.Forms.Button ButtonDelete;
         private System.Windows.Forms.Button ButtonEdit;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
