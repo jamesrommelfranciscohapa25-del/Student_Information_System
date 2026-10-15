@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;  
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -35,18 +35,15 @@ namespace Student_Information_System
 {
     public partial class Form1 : Form
     {
-        private readonly string connectionString = "server=localhost;port=3307;database=stud_db;uid=root;pwd=powerRangers;charset=utf8mb4;";
+        private readonly string connectionString = "server=localhost;port=330;database=stud_db;uid=root;pwd=powerRangers;charset=utf8mb4;";
 
         public Form1()
         {
 
             InitializeComponent();
+            this.ResizeRedraw = true;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            LoadStudentRecords();        
-        }
 
         private void ClearForm()
         {
@@ -78,9 +75,9 @@ namespace Student_Information_System
                     }
                 }
             }
-            catch(MySqlException ex)
+            catch (MySqlException ex)
             {
-                MessageBox.Show("Unable to connect to the database ("+ ex.Number + "): " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Unable to connect to the database (" + ex.Number + "): " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
@@ -115,11 +112,11 @@ namespace Student_Information_System
         }
 
         // empty event handlers in case textboxes are accidentally double-clicked in the designer
-        private void InputStudentID_TextChanged(object sender, EventArgs e){}
-        private void InputFullName_TextChanged(object sender, EventArgs e){}
-        private void InputGender_TextChanged(object sender, EventArgs e){}
-        private void InputYearLevel_TextChanged(object sender, EventArgs e){}
-        private void InputProgram_TextChanged(object sender, EventArgs e){}
-        private void InputContactNumber_TextChanged(object sender, EventArgs e){}
+        private void InputStudentID_TextChanged(object sender, EventArgs e) { }
+        private void InputFullName_TextChanged(object sender, EventArgs e) { }
+        private void InputGender_TextChanged(object sender, EventArgs e) { }
+        private void InputYearLevel_TextChanged(object sender, EventArgs e) { }
+        private void InputProgram_TextChanged(object sender, EventArgs e) { }
+        private void InputContactNumber_TextChanged(object sender, EventArgs e) { }
     }
 }
