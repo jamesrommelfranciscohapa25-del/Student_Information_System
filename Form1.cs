@@ -52,7 +52,6 @@ namespace Student_Information_System
         {
             InputStudentID.Clear();
             InputFullName.Clear();
-            InputGender.Clear();
             InputYearLevel.Clear();
             InputProgram.Clear();
             InputContactNumber.Clear();
