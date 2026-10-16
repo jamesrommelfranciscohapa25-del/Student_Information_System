@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using MySqlX.XDevAPI.Common;
+using System.Drawing.Imaging;
 
 /*
 INPUT FIELDS:
@@ -40,13 +41,13 @@ namespace Student_Information_System
         // maraming salamat
         private readonly string connectionString = "server=127.0.0.1;port=3307;database=stud_db;uid=root;pwd=Je197@du;charset=utf8mb4;";
 
+        private byte[] _photoBytes;
         public Form1()
         {
             InitializeComponent();
             this.ResizeRedraw = true;
             this.Load += Form1_Load;
         }
-
 
         private void ClearForm()
         {
@@ -58,6 +59,8 @@ namespace Student_Information_System
             InputContactNumber.Clear();
             InputStudentID.ReadOnly = false; // allow editing of Student ID after clearing the form
             InputStudentID.Focus(); // set focus to the Student ID field after clearing the form
+            _photoBytes = null;
+            ShowPhoto(null);
         }
 
         private void LoadStudentRecords()
@@ -93,7 +96,6 @@ namespace Student_Information_System
         {
             LoadStudentRecords();
         }
-
 
         private void StyleGrid()
         {
@@ -165,10 +167,8 @@ namespace Student_Information_System
                     }
 
                     string insertQuery = "INSERT INTO stud_data " +
-                        "(stud_id, stud_full_name, stud_gender, " +
-                        "stud_year_level, stud_program, stud_contact_number) " +
-                        "VALUES (@id, @name, @gender, @yearLevel, " +
-                        "@program, @contactNumber)";
+                    "(stud_id, stud_full_name, stud_gender, stud_year_level, stud_program, stud_contact_number, stud_photo) " +
+                    "VALUES (@id, @name, @gender, @yearLevel, @program, @contactNumber, @photo)";
 
                     using (MySqlCommand cmd = new MySqlCommand(insertQuery, conn))
                     {
@@ -178,6 +178,7 @@ namespace Student_Information_System
                         cmd.Parameters.AddWithValue("@yearLevel", InputYearLevel.Text.Trim());
                         cmd.Parameters.AddWithValue("@program", InputProgram.Text.Trim());
                         cmd.Parameters.AddWithValue("@contactNumber", InputContactNumber.Text.Trim());
+                        cmd.Parameters.Add("@photo", MySqlDbType.MediumBlob).Value = (object)_photoBytes ?? DBNull.Value;
 
                         cmd.ExecuteNonQuery();
                     }
@@ -226,7 +227,8 @@ namespace Student_Information_System
                         "stud_gender = @gender, " +
                         "stud_year_level = @yearLevel, " +
                         "stud_program = @program, " +
-                        "stud_contact_number = @contactNumber " +
+                        "stud_contact_number = @contactNumber, " +
+                        "stud_photo = @photo " +
                         "WHERE stud_id = @id";
 
                     using (MySqlCommand cmd = new MySqlCommand(updateQuery, conn))
@@ -237,6 +239,7 @@ namespace Student_Information_System
                         cmd.Parameters.AddWithValue("@yearLevel", InputYearLevel.Text.Trim());
                         cmd.Parameters.AddWithValue("@program", InputProgram.Text.Trim());
                         cmd.Parameters.AddWithValue("@contactNumber", InputContactNumber.Text.Trim());
+                        cmd.Parameters.Add("@photo", MySqlDbType.MediumBlob).Value = (object)_photoBytes ?? DBNull.Value;
 
                         int rowsAffected = cmd.ExecuteNonQuery();
 
@@ -343,6 +346,45 @@ namespace Student_Information_System
             InputContactNumber.Text = Convert.ToString(selectedRow.Cells["Contact Number"].Value);
 
             InputStudentID.ReadOnly = true;
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlCommand cmd = new MySqlCommand("SELECT stud_photo FROM stud_data WHERE stud_id = @id", conn))
+            {
+                cmd.Parameters.AddWithValue("@id", InputStudentID.Text);
+                conn.Open();
+                _photoBytes = cmd.ExecuteScalar() as byte[];
+                ShowPhoto(_photoBytes);
+            }
+        }
+
+        private void TestButton_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Filter = "Images|*.jpg;*.jpeg;*.png;*.bmp";
+                if (ofd.ShowDialog() != DialogResult.OK) return;
+
+                if (new FileInfo(ofd.FileName).Length > 2 * 1024 * 1024)
+                {
+                    MessageBox.Show("Please choose an image under 2MB, pwease :>");
+                    return;
+                }
+
+                _photoBytes = File.ReadAllBytes(ofd.FileName);
+                ShowPhoto(_photoBytes);
+            }
+        }
+
+        private void ShowPhoto(byte[] data)
+        {
+            pictureBox1.Image?.Dispose();
+            if (data == null) { pictureBox1.Image = null; return; }
+
+            using (MemoryStream ms = new MemoryStream(data))
+            using (Image img = Image.FromStream(ms))
+            {
+                pictureBox1.Image = new Bitmap(img);
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
