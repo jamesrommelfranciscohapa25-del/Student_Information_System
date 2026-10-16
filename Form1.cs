@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using System.Drawing.Imaging;
+using Student_Information_System.Database;
 
 /*
 INPUT FIELDS:
@@ -37,10 +38,6 @@ namespace Student_Information_System
 {
     public partial class Form1 : Form
     {
-        // magkaiba tabi ang key natun, palitan nyo nalang kapag diri kamo naka connect sa db
-        // maraming salamat
-        private readonly string connectionString = "server=127.0.0.1;port=3307;database=stud_db;uid=root;pwd=Je197@du;charset=utf8mb4;";
-
         private byte[] _photoBytes;
         public Form1()
         {
@@ -67,10 +64,17 @@ namespace Student_Information_System
         {
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                using (MySqlConnection connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
-                    string query = "SELECT stud_id AS 'Student ID', stud_full_name AS 'Full Name', stud_gender AS 'Gender', stud_year_level AS 'Year Level', stud_program AS 'Program', stud_contact_number AS 'Contact Number' FROM stud_data ORDER BY stud_id ASC";
+
+                    string query = 
+                        "SELECT stud_id AS 'Student ID', " +
+                        "stud_full_name AS 'Full Name', " +
+                        "stud_gender AS 'Gender', " +
+                        "stud_year_level AS 'Year Level', " +
+                        "stud_program AS 'Program', " +
+                        "stud_contact_number AS 'Contact Number' FROM stud_data ORDER BY stud_id ASC";
 
                     using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection))
                     {
@@ -147,7 +151,7 @@ namespace Student_Information_System
 
             try
             {
-                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                using (MySqlConnection conn = DatabaseConnection.GetConnection())
                 {
                     conn.Open();
 
@@ -218,7 +222,7 @@ namespace Student_Information_System
 
             try
             {
-                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                using (MySqlConnection conn = DatabaseConnection.GetConnection())
                 {
                     conn.Open();
 
@@ -286,7 +290,7 @@ namespace Student_Information_System
 
             try
             {
-                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                using (MySqlConnection conn = DatabaseConnection.GetConnection())
                 {
                     conn.Open();
 
@@ -347,7 +351,7 @@ namespace Student_Information_System
 
             InputStudentID.ReadOnly = true;
 
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = DatabaseConnection.GetConnection())
             using (MySqlCommand cmd = new MySqlCommand("SELECT stud_photo FROM stud_data WHERE stud_id = @id", conn))
             {
                 cmd.Parameters.AddWithValue("@id", InputStudentID.Text);

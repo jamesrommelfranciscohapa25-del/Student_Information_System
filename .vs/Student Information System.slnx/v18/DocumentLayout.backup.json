@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\julia\\source\\repos\\Student_Information_System\\",
+  "WorkspaceRootPath": "C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|c:\\users\\julia\\source\\repos\\student_information_system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\database\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:database\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|C:\\Users\\julia\\source\\repos\\Student_Information_System\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|C:\\Users\\julia\\source\\repos\\Student_Information_System\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,6 +30,14 @@
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
@@ -37,45 +49,52 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\Student_Information_System\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\julia\\source\\repos\\Student_Information_System\\Form1.Designer.cs",
-              "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQBAAAtAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "DatabaseConnection.cs",
+              "DocumentMoniker": "C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\Database\\DatabaseConnection.cs",
+              "RelativeDocumentMoniker": "Database\\DatabaseConnection.cs",
+              "ToolTip": "C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\Database\\DatabaseConnection.cs",
+              "RelativeToolTip": "Database\\DatabaseConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T13:17:16.319Z",
+              "WhenOpened": "2026-10-16T02:46:47.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\Student_Information_System\\Form1.cs",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\julia\\source\\repos\\Student_Information_System\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAAIMBAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T12:42:49.055Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-10-15T12:42:48.451Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\julia\\source\\repos\\Student_Information_System\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\julia\\source\\repos\\Student_Information_System\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAACMBAAAAAAAAAAAawGYBAAABAAAAAAAAAA==",
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAALsBAAAAAAAAAAAAAMsBAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T12:42:48.451Z"
+              "WhenOpened": "2026-10-15T13:17:16.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T02:10:15.545Z"
             }
           ]
         },
