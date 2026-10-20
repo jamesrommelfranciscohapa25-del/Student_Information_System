@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.Versioning;
 
 namespace Student_Information_System
 {
+    [SupportedOSPlatform("windows")]
     internal static class Program
     {
         /// <summary>

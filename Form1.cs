@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.Versioning;
 using MySql.Data.MySqlClient;
 using System.Drawing.Imaging;
 using Student_Information_System.Database;
@@ -36,6 +37,7 @@ DATA GRID VIEW:
 
 namespace Student_Information_System
 {
+    [SupportedOSPlatform("windows")]
     public partial class Form1 : Form
     {
         private byte[] _photoBytes;
