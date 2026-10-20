@@ -20,6 +20,7 @@
     <None Include=".github\upgrades\scenarios\dotnet-version-upgrade\tasks.md" />
     <None Include=".github\upgrades\scenarios\dotnet-version-upgrade\tasks\01-prerequisites\progress-details.md" />
     <None Include=".github\upgrades\scenarios\dotnet-version-upgrade\tasks\02-sdk-conversion\progress-details.md" />
+    <None Include=".github\upgrades\scenarios\dotnet-version-upgrade\tasks\03-winforms-net10-upgrade\progress-details.md" />
     <None Include=".github\upgrades\scenarios\dotnet-version-upgrade\upgrade-options.md" />
   </ItemGroup>
   <ItemGroup>
