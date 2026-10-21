@@ -5,7 +5,7 @@ using ReaLTaiizor.Manager;
 
 namespace Student_Information_System.Forms.Auth
 {
-    partial class Login
+    partial class Login : System.Windows.Forms.Form
     {
         /// <summary>
         /// Required designer variable.
@@ -46,7 +46,7 @@ namespace Student_Information_System.Forms.Auth
             poisonPanel7.SuspendLayout();
             poisonPanel6.SuspendLayout();
             poisonPanel5.SuspendLayout();
-            SuspendLayout();
+            this.SuspendLayout();
             // 
             // poisonPanel3
             // 

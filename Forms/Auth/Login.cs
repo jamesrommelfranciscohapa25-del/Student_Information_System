@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Student_Information_System.Database;
-
+using MySql.Data.MySqlClient;
 /*
 design:
 InputUsername
@@ -39,20 +39,21 @@ ON DUPLICATE KEY UPDATE login_password = VALUES(login_password);
 SELECT * FROM login_data;
 */
 
-namespace Student_Information_System.Forms
+namespace Student_Information_System.Forms.Auth
 {
     public partial class Login : Form
     {
         public Login()
         {
             InitializeComponent();
+            BtnLogin.Click += BtnLogin_Click;
         }
 
         //clear input fieldss
         private void ClearForm()
         {
-            InputUsername.Clear();
-            InputUserPassword.Clear();
+            usernameIput.Clear();
+            passwordInput.Clear();
         }
 
         //fetch login info from database
@@ -60,31 +61,39 @@ namespace Student_Information_System.Forms
         {
             try
             {
-                using (MySqlConnection connection = DatabaseConnection.GetConnection())
+                using (MySqlConnection connection =
+                        LoginDatabaseConnection.GetConnection())
                 {
                     connection.Open();
 
                     string query =
                         "SELECT login_username AS 'Login Username', " +
-                        "login_password AS 'Login Password' FROM login_data ORDER BY login_username ASC;";
-                }
+                        "login_password AS 'Login Password' " +
+                        "FROM login_data ORDER BY login_username ASC;";
 
-                using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection))
-                {
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
-
-                    //StyleGrid();
+                    using (MySqlDataAdapter adapter =
+                        new MySqlDataAdapter(query, connection))
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+                    }
                 }
             }
-
             catch (MySqlException ex)
             {
-                MessageBox.Show("Unable to connect to the database (" + ex.Number + "): " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(
+                    "Database error (" + ex.Number + "): " + ex.Message,
+                    "Database Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(
+                    "An error occurred: " + ex.Message,
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
 
@@ -95,8 +104,8 @@ namespace Student_Information_System.Forms
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            string username = InputUsername.Text.Trim();
-            string password = InputUserPassword.Text.Trim();
+            string username = usernameIput.Text.Trim();
+            string password = passwordInput.Text.Trim();
 
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
@@ -106,22 +115,25 @@ namespace Student_Information_System.Forms
 
             try
             {
-                using (MySqlConnection connection = DatabaseConnection.GetConnection())
+                using (MySqlConnection connection = LoginDatabaseConnection.GetConnection())
                 {
                     connection.Open();
 
                     string query = "SELECT COUNT(*) FROM login_data WHERE login_username = @username AND login_password = @password;";
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@username", InputUsername.Text.Trim());
-                        command.Parameters.AddWithValue("@password", InputUserPassword.Text.Trim());
+                        command.Parameters.AddWithValue("@username", usernameIput.Text.Trim());
+                        command.Parameters.AddWithValue("@password", passwordInput.Text.Trim());
 
                         int count = Convert.ToInt32(command.ExecuteScalar());
 
                         if (count > 0)
                         {
                             MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            // Proceed to the next form or main application window
+                            Form1 mainForm = new Form1();
+                            mainForm.Show();
+
+                            this.Hide();
                         }
                         else
                         {
