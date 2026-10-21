@@ -5,8 +5,6 @@ namespace Student_Information_System.Database
 {
     public static class DatabaseConnection
     {
-        // magkaiba tabi ang key natun, palitan nyo nalang kapag diri kamo naka connect sa db
-        // maraming salamat
         private static readonly string connectionString =
             "server=127.0.0.1;" + // palitan niyo sang sa hostname niyo
             "port=3307;" +
@@ -58,10 +56,22 @@ USE stud_db;
 CREATE TABLE IF NOT EXISTS stud_data(
     stud_id VARCHAR(20) NOT NULL PRIMARY KEY,
     stud_full_name VARCHAR(100) NOT NULL,
-    stud_gender ENUM('Male', 'Female', 'Other', 'Prefer not to say') NOT NULL,
+    stud_gender ENUM(
+    'Male', 
+    'Female', 
+    'Other', 
+    'Prefer not to say'
+    ) NOT NULL,
     stud_year_level INT NOT NULL CHECK (stud_year_level BETWEEN 1 AND 5),
-    stud_program VARCHAR(50) NOT NULL,
-    stud_contact_number VARCHAR(16) NOT NULL CHECK (stud_contact_number REGEXP '^[+]63 [0-9]{3} [0-9]{3} [0-9]{4}$'),
+    stud_program ENUM(
+    'BS COMPUTER SCIENCE', 
+    'BS BIOLOGY', 
+    'BS METEOROLOGY', 
+    'BS CHEMISTRY', 
+    'BS INFORMATION TECHNOLOGY'
+    ) NOT NULL,
+    stud_contact_number VARCHAR(11) NOT NULL 
+		CHECK (stud_contact_number REGEXP '^09[0-9]{9}$'),
     stud_photo MEDIUMBLOB NULL
 );
 
@@ -72,25 +82,21 @@ INSERT INTO stud_data(
     stud_gender, 
     stud_year_level, 
     stud_program, 
-    stud_contact_number)
+    stud_contact_number
+)
 VALUES(
     '2025-23-12345', 
     'James Rommel Harapa', 
     'Other', 
     4, 
-    'BS Biology', 
-    '+63 123 456 7890')
+    'BS BIOLOGY', 
+    '09123456789'
+)
 ON DUPLICATE KEY UPDATE stud_full_name = VALUES(stud_full_name);
 
 -- display sample data
 SELECT * FROM stud_data;
 
--- ALTER USER 'root'@'localhost' 
--- IDENTIFIED BY 'powerRangers';
-
--- FLUSH PRIVILEGES;
-
-------------------------------------------
 query 2:
 USE stud_db;
    ALTER TABLE stud_data ADD COLUMN stud_photo MEDIUMBLOB NULL;
