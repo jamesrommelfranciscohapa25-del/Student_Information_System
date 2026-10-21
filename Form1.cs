@@ -55,7 +55,7 @@ namespace Student_Information_System
             InputFullName.Clear();
             InputYearLevel.Clear();
             InputGender.SelectedIndex = -1; // resets the dropdown selecetion stuff
-            InputProgram.Clear();
+            InputProgram.SelectedIndex = -1;
             InputContactNumber.Clear();
             InputStudentID.ReadOnly = false; // allow editing of Student ID after clearing the form
             InputStudentID.Focus(); // set focus to the Student ID field after clearing the form

@@ -36,6 +36,7 @@
             label1 = new System.Windows.Forms.Label();
             panel1 = new System.Windows.Forms.Panel();
             panel2 = new System.Windows.Forms.Panel();
+            InputProgram = new System.Windows.Forms.ComboBox();
             AddPhotoPanel = new System.Windows.Forms.Panel();
             button1 = new System.Windows.Forms.Button();
             ImageInputBoxPanel = new System.Windows.Forms.Panel();
@@ -47,7 +48,6 @@
             label2 = new System.Windows.Forms.Label();
             InputGender = new System.Windows.Forms.ComboBox();
             InputYearLevel = new System.Windows.Forms.TextBox();
-            InputProgram = new System.Windows.Forms.TextBox();
             panel3 = new System.Windows.Forms.Panel();
             panel7 = new System.Windows.Forms.Panel();
             panel6 = new System.Windows.Forms.Panel();
@@ -158,6 +158,7 @@
             // panel2
             // 
             panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel2.Controls.Add(InputProgram);
             panel2.Controls.Add(AddPhotoPanel);
             panel2.Controls.Add(ImageInputBoxPanel);
             panel2.Controls.Add(label7);
@@ -170,7 +171,6 @@
             panel2.Controls.Add(InputStudentID);
             panel2.Controls.Add(InputFullName);
             panel2.Controls.Add(InputYearLevel);
-            panel2.Controls.Add(InputProgram);
             panel2.Controls.Add(InputContactNumber);
             panel2.Dock = System.Windows.Forms.DockStyle.Left;
             panel2.Location = new System.Drawing.Point(0, 77);
@@ -178,6 +178,17 @@
             panel2.Name = "panel2";
             panel2.Size = new System.Drawing.Size(350, 664);
             panel2.TabIndex = 21;
+            // 
+            // InputProgram
+            // 
+            InputProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            InputProgram.FormattingEnabled = true;
+            InputProgram.Items.AddRange(new object[] { "BS COMPUTER SCIENCE", "BS INFORMATION TECHNOLOGY", "BS BIOLOGY", "BS METEOROLOGY", "BS CHEMISTRY" });
+            InputProgram.Location = new System.Drawing.Point(22, 561);
+            InputProgram.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            InputProgram.Name = "InputProgram";
+            InputProgram.Size = new System.Drawing.Size(299, 28);
+            InputProgram.TabIndex = 34;
             // 
             // AddPhotoPanel
             // 
@@ -297,16 +308,6 @@
             InputYearLevel.Size = new System.Drawing.Size(299, 26);
             InputYearLevel.TabIndex = 6;
             InputYearLevel.TextChanged += InputYearLevel_TextChanged;
-            // 
-            // InputProgram
-            // 
-            InputProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            InputProgram.Location = new System.Drawing.Point(22, 559);
-            InputProgram.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            InputProgram.Name = "InputProgram";
-            InputProgram.Size = new System.Drawing.Size(302, 26);
-            InputProgram.TabIndex = 8;
-            InputProgram.TextChanged += InputProgram_TextChanged;
             // 
             // panel3
             // 
@@ -531,7 +532,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox InputGender;
         private System.Windows.Forms.TextBox InputYearLevel;
-        private System.Windows.Forms.TextBox InputProgram;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.ComboBox DropDownB;
@@ -552,5 +552,6 @@
         private ReaLTaiizor.Animate.Parrot.ObjectAnimator objectAnimator1;
         private System.Windows.Forms.Panel ImageInputBoxPanel;
         private System.Windows.Forms.Panel AddPhotoPanel;
+        private System.Windows.Forms.ComboBox InputProgram;
     }
 }
