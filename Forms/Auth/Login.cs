@@ -18,7 +18,7 @@ login_data (table)
 login_username
 login_password
 
---------------------------------------------------------
+-----------------------------------------------------------
 
 CREATE DATABASE IF NOT EXISTS login_db;
 USE login_db;
