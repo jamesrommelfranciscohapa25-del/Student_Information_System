@@ -28,449 +28,472 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.InputStudentID = new System.Windows.Forms.TextBox();
-            this.InputFullName = new System.Windows.Forms.TextBox();
-            this.InputContactNumber = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.HeaderPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.InputGender = new System.Windows.Forms.ComboBox();
-            this.InputYearLevel = new System.Windows.Forms.TextBox();
-            this.InputProgram = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.DropDownB = new System.Windows.Forms.ComboBox();
-            this.DropDownA = new System.Windows.Forms.ComboBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ClearFieldsButton = new System.Windows.Forms.Button();
-            this.ButtonAdd = new System.Windows.Forms.Button();
-            this.ButtonDelete = new System.Windows.Forms.Button();
-            this.ButtonEdit = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.HeaderPanel.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.SuspendLayout();
+            InputStudentID = new System.Windows.Forms.TextBox();
+            InputFullName = new System.Windows.Forms.TextBox();
+            InputContactNumber = new System.Windows.Forms.TextBox();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            HeaderPanel = new System.Windows.Forms.Panel();
+            label1 = new System.Windows.Forms.Label();
+            panel1 = new System.Windows.Forms.Panel();
+            panel2 = new System.Windows.Forms.Panel();
+            label8 = new System.Windows.Forms.Label();
+            button1 = new System.Windows.Forms.Button();
+            label7 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            InputGender = new System.Windows.Forms.ComboBox();
+            InputYearLevel = new System.Windows.Forms.TextBox();
+            InputProgram = new System.Windows.Forms.TextBox();
+            panel3 = new System.Windows.Forms.Panel();
+            panel7 = new System.Windows.Forms.Panel();
+            panel6 = new System.Windows.Forms.Panel();
+            DropDownB = new System.Windows.Forms.ComboBox();
+            DropDownA = new System.Windows.Forms.ComboBox();
+            panel5 = new System.Windows.Forms.Panel();
+            dataGridView1 = new System.Windows.Forms.DataGridView();
+            ClearFieldsButton = new System.Windows.Forms.Button();
+            ButtonAdd = new System.Windows.Forms.Button();
+            ButtonDelete = new System.Windows.Forms.Button();
+            ButtonEdit = new System.Windows.Forms.Button();
+            panel4 = new System.Windows.Forms.Panel();
+            textBox1 = new System.Windows.Forms.TextBox();
+            pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            HeaderPanel.SuspendLayout();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
+            panel6.SuspendLayout();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            SuspendLayout();
             // 
             // InputStudentID
             // 
-            this.InputStudentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputStudentID.Location = new System.Drawing.Point(9, 391);
-            this.InputStudentID.Name = "InputStudentID";
-            this.InputStudentID.Size = new System.Drawing.Size(259, 26);
-            this.InputStudentID.TabIndex = 0;
-            this.InputStudentID.TextChanged += new System.EventHandler(this.InputStudentID_TextChanged);
+            InputStudentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            InputStudentID.Location = new System.Drawing.Point(19, 315);
+            InputStudentID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            InputStudentID.Name = "InputStudentID";
+            InputStudentID.Size = new System.Drawing.Size(302, 26);
+            InputStudentID.TabIndex = 0;
+            InputStudentID.TextChanged += InputStudentID_TextChanged;
             // 
             // InputFullName
             // 
-            this.InputFullName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.InputFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputFullName.Location = new System.Drawing.Point(11, 443);
-            this.InputFullName.Name = "InputFullName";
-            this.InputFullName.Size = new System.Drawing.Size(257, 26);
-            this.InputFullName.TabIndex = 2;
-            this.InputFullName.TextChanged += new System.EventHandler(this.InputFullName_TextChanged);
+            InputFullName.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            InputFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            InputFullName.Location = new System.Drawing.Point(22, 375);
+            InputFullName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            InputFullName.Name = "InputFullName";
+            InputFullName.Size = new System.Drawing.Size(299, 26);
+            InputFullName.TabIndex = 2;
+            InputFullName.TextChanged += InputFullName_TextChanged;
             // 
             // InputContactNumber
             // 
-            this.InputContactNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputContactNumber.Location = new System.Drawing.Point(11, 654);
-            this.InputContactNumber.Name = "InputContactNumber";
-            this.InputContactNumber.Size = new System.Drawing.Size(259, 26);
-            this.InputContactNumber.TabIndex = 10;
-            this.InputContactNumber.TextChanged += new System.EventHandler(this.InputContactNumber_TextChanged);
+            InputContactNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            InputContactNumber.Location = new System.Drawing.Point(22, 619);
+            InputContactNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            InputContactNumber.Name = "InputContactNumber";
+            InputContactNumber.Size = new System.Drawing.Size(302, 26);
+            InputContactNumber.TabIndex = 10;
+            InputContactNumber.TextChanged += InputContactNumber_TextChanged;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.ImageLocation = "";
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(298, 298);
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            pictureBox1.ImageLocation = "";
+            pictureBox1.Location = new System.Drawing.Point(0, 0);
+            pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(348, 221);
+            pictureBox1.TabIndex = 18;
+            pictureBox1.TabStop = false;
             // 
             // HeaderPanel
             // 
-            this.HeaderPanel.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.HeaderPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.HeaderPanel.Controls.Add(this.label1);
-            this.HeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.HeaderPanel.Location = new System.Drawing.Point(0, 0);
-            this.HeaderPanel.Name = "HeaderPanel";
-            this.HeaderPanel.Size = new System.Drawing.Size(1424, 100);
-            this.HeaderPanel.TabIndex = 19;
+            HeaderPanel.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            HeaderPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            HeaderPanel.Controls.Add(label1);
+            HeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            HeaderPanel.Location = new System.Drawing.Point(0, 0);
+            HeaderPanel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            HeaderPanel.Name = "HeaderPanel";
+            HeaderPanel.Size = new System.Drawing.Size(1064, 34);
+            HeaderPanel.TabIndex = 19;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(150, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(305, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Student Information System";
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label1.Location = new System.Drawing.Point(175, 43);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(305, 29);
+            label1.TabIndex = 0;
+            label1.Text = "Student Information System";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 941);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1424, 100);
-            this.panel1.TabIndex = 20;
+            panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            panel1.Location = new System.Drawing.Point(0, 741);
+            panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(1064, 30);
+            panel1.TabIndex = 20;
             // 
             // panel2
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.InputGender);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.InputStudentID);
-            this.panel2.Controls.Add(this.InputFullName);
-            this.panel2.Controls.Add(this.InputYearLevel);
-            this.panel2.Controls.Add(this.InputProgram);
-            this.panel2.Controls.Add(this.InputContactNumber);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 100);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(300, 841);
-            this.panel2.TabIndex = 21;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(7, 631);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(129, 20);
-            this.label7.TabIndex = 31;
-            this.label7.Text = "Contact Number:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(7, 579);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 20);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "Program:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 527);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 20);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "Year Level:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 472);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 20);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Gender:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 420);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 20);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Student Name:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(5, 368);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 20);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Student ID:";
-            // 
-            // InputGender
-            // 
-            this.InputGender.Cursor = System.Windows.Forms.Cursors.Default;
-            this.InputGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputGender.FormattingEnabled = true;
-            this.InputGender.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Other",
-            "Prefer not to say"});
-            this.InputGender.Location = new System.Drawing.Point(11, 495);
-            this.InputGender.Name = "InputGender";
-            this.InputGender.Size = new System.Drawing.Size(257, 28);
-            this.InputGender.TabIndex = 26;
-            // 
-            // InputYearLevel
-            // 
-            this.InputYearLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputYearLevel.Location = new System.Drawing.Point(11, 550);
-            this.InputYearLevel.Name = "InputYearLevel";
-            this.InputYearLevel.Size = new System.Drawing.Size(257, 26);
-            this.InputYearLevel.TabIndex = 6;
-            this.InputYearLevel.TextChanged += new System.EventHandler(this.InputYearLevel_TextChanged);
-            // 
-            // InputProgram
-            // 
-            this.InputProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputProgram.Location = new System.Drawing.Point(11, 602);
-            this.InputProgram.Name = "InputProgram";
-            this.InputProgram.Size = new System.Drawing.Size(259, 26);
-            this.InputProgram.TabIndex = 8;
-            this.InputProgram.TextChanged += new System.EventHandler(this.InputProgram_TextChanged);
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(300, 100);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1124, 841);
-            this.panel3.TabIndex = 22;
-            // 
-            // panel7
-            // 
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 768);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1122, 71);
-            this.panel7.TabIndex = 27;
-            // 
-            // panel6
-            // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.DropDownB);
-            this.panel6.Controls.Add(this.DropDownA);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 80);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1122, 80);
-            this.panel6.TabIndex = 26;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Location = new System.Drawing.Point(99, 317);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Add Photo";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.TestButton_Click);
-            // 
-            // DropDownB
-            // 
-            this.DropDownB.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.DropDownB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DropDownB.FormattingEnabled = true;
-            this.DropDownB.Items.AddRange(new object[] {
-            "Blocks "});
-            this.DropDownB.Location = new System.Drawing.Point(320, 23);
-            this.DropDownB.Name = "DropDownB";
-            this.DropDownB.Size = new System.Drawing.Size(183, 28);
-            this.DropDownB.TabIndex = 27;
-            // 
-            // DropDownA
-            // 
-            this.DropDownA.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.DropDownA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DropDownA.FormattingEnabled = true;
-            this.DropDownA.Items.AddRange(new object[] {
-            "Program",
-            "Year Level"});
-            this.DropDownA.Location = new System.Drawing.Point(79, 23);
-            this.DropDownA.Name = "DropDownA";
-            this.DropDownA.Size = new System.Drawing.Size(183, 28);
-            this.DropDownA.TabIndex = 26;
-            // 
-            // panel5
-            // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.dataGridView1);
-            this.panel5.Controls.Add(this.ClearFieldsButton);
-            this.panel5.Controls.Add(this.ButtonAdd);
-            this.panel5.Controls.Add(this.ButtonDelete);
-            this.panel5.Controls.Add(this.ButtonEdit);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 80);
-            this.panel5.Margin = new System.Windows.Forms.Padding(10);
-            this.panel5.Name = "panel5";
-            this.panel5.Padding = new System.Windows.Forms.Padding(20);
-            this.panel5.Size = new System.Drawing.Size(1122, 759);
-            this.panel5.TabIndex = 24;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowDrop = true;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(78, 153);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(964, 528);
-            this.dataGridView1.TabIndex = 28;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // ClearFieldsButton
-            // 
-            this.ClearFieldsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ClearFieldsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearFieldsButton.Location = new System.Drawing.Point(291, 98);
-            this.ClearFieldsButton.Name = "ClearFieldsButton";
-            this.ClearFieldsButton.Size = new System.Drawing.Size(166, 33);
-            this.ClearFieldsButton.TabIndex = 29;
-            this.ClearFieldsButton.Text = "Clear";
-            this.ClearFieldsButton.UseVisualStyleBackColor = true;
-            this.ClearFieldsButton.Click += new System.EventHandler(this.ClearFieldsButton_Click);
-            // 
-            // ButtonAdd
-            // 
-            this.ButtonAdd.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ButtonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonAdd.FlatAppearance.BorderSize = 0;
-            this.ButtonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonAdd.ForeColor = System.Drawing.SystemColors.Window;
-            this.ButtonAdd.Location = new System.Drawing.Point(119, 98);
-            this.ButtonAdd.Name = "ButtonAdd";
-            this.ButtonAdd.Size = new System.Drawing.Size(166, 33);
-            this.ButtonAdd.TabIndex = 30;
-            this.ButtonAdd.Text = "Add";
-            this.ButtonAdd.UseVisualStyleBackColor = false;
-            this.ButtonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
-            // 
-            // ButtonDelete
-            // 
-            this.ButtonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonDelete.Location = new System.Drawing.Point(635, 98);
-            this.ButtonDelete.Name = "ButtonDelete";
-            this.ButtonDelete.Size = new System.Drawing.Size(166, 33);
-            this.ButtonDelete.TabIndex = 31;
-            this.ButtonDelete.Text = "Delete";
-            this.ButtonDelete.UseVisualStyleBackColor = true;
-            this.ButtonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
-            // 
-            // ButtonEdit
-            // 
-            this.ButtonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonEdit.Location = new System.Drawing.Point(463, 98);
-            this.ButtonEdit.Name = "ButtonEdit";
-            this.ButtonEdit.Size = new System.Drawing.Size(166, 33);
-            this.ButtonEdit.TabIndex = 32;
-            this.ButtonEdit.Text = "Edit";
-            this.ButtonEdit.UseVisualStyleBackColor = true;
-            this.ButtonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1122, 80);
-            this.panel4.TabIndex = 23;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(42, 26);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(316, 30);
-            this.textBox1.TabIndex = 19;
-            this.textBox1.Text = "Search Name or Student ID";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(640, 72);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 29;
-            this.pictureBox2.TabStop = false;
+            panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel2.Controls.Add(label8);
+            panel2.Controls.Add(button1);
+            panel2.Controls.Add(label7);
+            panel2.Controls.Add(label6);
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(label3);
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(InputGender);
+            panel2.Controls.Add(pictureBox1);
+            panel2.Controls.Add(InputStudentID);
+            panel2.Controls.Add(InputFullName);
+            panel2.Controls.Add(InputYearLevel);
+            panel2.Controls.Add(InputProgram);
+            panel2.Controls.Add(InputContactNumber);
+            panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            panel2.Location = new System.Drawing.Point(0, 34);
+            panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new System.Drawing.Size(350, 707);
+            panel2.TabIndex = 21;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(24, 301);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(244, 13);
-            this.label8.TabIndex = 32;
-            this.label8.Text = "Please use a 1024x1024 image that is under 2MB.";
+            label8.AutoSize = true;
+            label8.Location = new System.Drawing.Point(43, 234);
+            label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label8.Name = "label8";
+            label8.Size = new System.Drawing.Size(261, 15);
+            label8.TabIndex = 32;
+            label8.Text = "Please use a 1024x1024 image that is under 2MB.";
+            // 
+            // button1
+            // 
+            button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            button1.Location = new System.Drawing.Point(130, 253);
+            button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(88, 27);
+            button1.TabIndex = 28;
+            button1.Text = "Add Photo";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += TestButton_Click;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label7.Location = new System.Drawing.Point(17, 592);
+            label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label7.Name = "label7";
+            label7.Size = new System.Drawing.Size(129, 20);
+            label7.TabIndex = 31;
+            label7.Text = "Contact Number:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label6.Location = new System.Drawing.Point(17, 532);
+            label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(73, 20);
+            label6.TabIndex = 30;
+            label6.Text = "Program:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label5.Location = new System.Drawing.Point(17, 472);
+            label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(88, 20);
+            label5.TabIndex = 29;
+            label5.Text = "Year Level:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label4.Location = new System.Drawing.Point(17, 409);
+            label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(67, 20);
+            label4.TabIndex = 28;
+            label4.Text = "Gender:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label3.Location = new System.Drawing.Point(17, 349);
+            label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(116, 20);
+            label3.TabIndex = 27;
+            label3.Text = "Student Name:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label2.Location = new System.Drawing.Point(15, 289);
+            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(91, 20);
+            label2.TabIndex = 23;
+            label2.Text = "Student ID:";
+            // 
+            // InputGender
+            // 
+            InputGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            InputGender.FormattingEnabled = true;
+            InputGender.Items.AddRange(new object[] { "Male", "Female", "Other", "Prefer not to say" });
+            InputGender.Location = new System.Drawing.Point(22, 435);
+            InputGender.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            InputGender.Name = "InputGender";
+            InputGender.Size = new System.Drawing.Size(299, 28);
+            InputGender.TabIndex = 26;
+            // 
+            // InputYearLevel
+            // 
+            InputYearLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            InputYearLevel.Location = new System.Drawing.Point(22, 499);
+            InputYearLevel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            InputYearLevel.Name = "InputYearLevel";
+            InputYearLevel.Size = new System.Drawing.Size(299, 26);
+            InputYearLevel.TabIndex = 6;
+            InputYearLevel.TextChanged += InputYearLevel_TextChanged;
+            // 
+            // InputProgram
+            // 
+            InputProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            InputProgram.Location = new System.Drawing.Point(22, 559);
+            InputProgram.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            InputProgram.Name = "InputProgram";
+            InputProgram.Size = new System.Drawing.Size(302, 26);
+            InputProgram.TabIndex = 8;
+            InputProgram.TextChanged += InputProgram_TextChanged;
+            // 
+            // panel3
+            // 
+            panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel3.Controls.Add(panel7);
+            panel3.Controls.Add(panel6);
+            panel3.Controls.Add(panel5);
+            panel3.Controls.Add(panel4);
+            panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            panel3.Location = new System.Drawing.Point(350, 34);
+            panel3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel3.Name = "panel3";
+            panel3.Size = new System.Drawing.Size(714, 707);
+            panel3.TabIndex = 22;
+            // 
+            // panel7
+            // 
+            panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            panel7.Location = new System.Drawing.Point(0, 660);
+            panel7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel7.Name = "panel7";
+            panel7.Size = new System.Drawing.Size(712, 45);
+            panel7.TabIndex = 27;
+            // 
+            // panel6
+            // 
+            panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel6.Controls.Add(DropDownB);
+            panel6.Controls.Add(DropDownA);
+            panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            panel6.Location = new System.Drawing.Point(0, 92);
+            panel6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel6.Name = "panel6";
+            panel6.Size = new System.Drawing.Size(712, 92);
+            panel6.TabIndex = 26;
+            // 
+            // DropDownB
+            // 
+            DropDownB.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            DropDownB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            DropDownB.FormattingEnabled = true;
+            DropDownB.Items.AddRange(new object[] { "Blocks " });
+            DropDownB.Location = new System.Drawing.Point(373, 27);
+            DropDownB.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            DropDownB.Name = "DropDownB";
+            DropDownB.Size = new System.Drawing.Size(213, 28);
+            DropDownB.TabIndex = 27;
+            // 
+            // DropDownA
+            // 
+            DropDownA.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            DropDownA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            DropDownA.FormattingEnabled = true;
+            DropDownA.Items.AddRange(new object[] { "Program", "Year Level" });
+            DropDownA.Location = new System.Drawing.Point(92, 27);
+            DropDownA.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            DropDownA.Name = "DropDownA";
+            DropDownA.Size = new System.Drawing.Size(213, 28);
+            DropDownA.TabIndex = 26;
+            // 
+            // panel5
+            // 
+            panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel5.Controls.Add(dataGridView1);
+            panel5.Controls.Add(ClearFieldsButton);
+            panel5.Controls.Add(ButtonAdd);
+            panel5.Controls.Add(ButtonDelete);
+            panel5.Controls.Add(ButtonEdit);
+            panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            panel5.Location = new System.Drawing.Point(0, 92);
+            panel5.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            panel5.Name = "panel5";
+            panel5.Padding = new System.Windows.Forms.Padding(23, 23, 23, 23);
+            panel5.Size = new System.Drawing.Size(712, 613);
+            panel5.TabIndex = 24;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowDrop = true;
+            dataGridView1.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
+            dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new System.Drawing.Point(91, 177);
+            dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new System.Drawing.Size(472, 363);
+            dataGridView1.TabIndex = 28;
+            dataGridView1.CellClick += dataGridView1_CellClick;
+            // 
+            // ClearFieldsButton
+            // 
+            ClearFieldsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            ClearFieldsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            ClearFieldsButton.Location = new System.Drawing.Point(204, 113);
+            ClearFieldsButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            ClearFieldsButton.Name = "ClearFieldsButton";
+            ClearFieldsButton.Size = new System.Drawing.Size(115, 38);
+            ClearFieldsButton.TabIndex = 29;
+            ClearFieldsButton.Text = "Clear";
+            ClearFieldsButton.UseVisualStyleBackColor = true;
+            ClearFieldsButton.Click += ClearFieldsButton_Click;
+            // 
+            // ButtonAdd
+            // 
+            ButtonAdd.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            ButtonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            ButtonAdd.FlatAppearance.BorderSize = 0;
+            ButtonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            ButtonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            ButtonAdd.ForeColor = System.Drawing.SystemColors.Window;
+            ButtonAdd.Location = new System.Drawing.Point(71, 113);
+            ButtonAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            ButtonAdd.Name = "ButtonAdd";
+            ButtonAdd.Size = new System.Drawing.Size(125, 38);
+            ButtonAdd.TabIndex = 30;
+            ButtonAdd.Text = "Add";
+            ButtonAdd.UseVisualStyleBackColor = false;
+            ButtonAdd.Click += ButtonAdd_Click;
+            // 
+            // ButtonDelete
+            // 
+            ButtonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            ButtonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            ButtonDelete.Location = new System.Drawing.Point(440, 112);
+            ButtonDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            ButtonDelete.Name = "ButtonDelete";
+            ButtonDelete.Size = new System.Drawing.Size(105, 38);
+            ButtonDelete.TabIndex = 31;
+            ButtonDelete.Text = "Delete";
+            ButtonDelete.UseVisualStyleBackColor = true;
+            ButtonDelete.Click += ButtonDelete_Click;
+            // 
+            // ButtonEdit
+            // 
+            ButtonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            ButtonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            ButtonEdit.Location = new System.Drawing.Point(327, 112);
+            ButtonEdit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            ButtonEdit.Name = "ButtonEdit";
+            ButtonEdit.Size = new System.Drawing.Size(105, 38);
+            ButtonEdit.TabIndex = 32;
+            ButtonEdit.Text = "Edit";
+            ButtonEdit.UseVisualStyleBackColor = true;
+            ButtonEdit.Click += ButtonEdit_Click;
+            // 
+            // panel4
+            // 
+            panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel4.Controls.Add(textBox1);
+            panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            panel4.Location = new System.Drawing.Point(0, 0);
+            panel4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel4.Name = "panel4";
+            panel4.Size = new System.Drawing.Size(712, 92);
+            panel4.TabIndex = 23;
+            // 
+            // textBox1
+            // 
+            textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            textBox1.Location = new System.Drawing.Point(49, 30);
+            textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new System.Drawing.Size(368, 34);
+            textBox1.TabIndex = 19;
+            textBox1.Text = "Search Name or Student ID";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Location = new System.Drawing.Point(640, 72);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new System.Drawing.Size(100, 50);
+            pictureBox2.TabIndex = 29;
+            pictureBox2.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1424, 1041);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.HeaderPanel);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.HeaderPanel.ResumeLayout(false);
-            this.HeaderPanel.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(1064, 771);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            Controls.Add(HeaderPanel);
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "Form1";
+            Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            HeaderPanel.ResumeLayout(false);
+            HeaderPanel.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel6.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ResumeLayout(false);
 
         }
 

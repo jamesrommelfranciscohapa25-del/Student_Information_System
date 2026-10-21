@@ -1,4 +1,9 @@
-﻿namespace Student_Information_System.Forms.Auth
+﻿using ReaLTaiizor;
+using ReaLTaiizor.Controls;
+using ReaLTaiizor.Forms;
+using ReaLTaiizor.Manager;
+
+namespace Student_Information_System.Forms.Auth
 {
     partial class Login
     {
