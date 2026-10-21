@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.Versioning;
+using Student_Information_System.Forms.Auth;
 
 namespace Student_Information_System
 {

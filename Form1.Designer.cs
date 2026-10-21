@@ -36,8 +36,9 @@
             label1 = new System.Windows.Forms.Label();
             panel1 = new System.Windows.Forms.Panel();
             panel2 = new System.Windows.Forms.Panel();
-            label8 = new System.Windows.Forms.Label();
+            AddPhotoPanel = new System.Windows.Forms.Panel();
             button1 = new System.Windows.Forms.Button();
+            ImageInputBoxPanel = new System.Windows.Forms.Panel();
             label7 = new System.Windows.Forms.Label();
             label6 = new System.Windows.Forms.Label();
             label5 = new System.Windows.Forms.Label();
@@ -55,15 +56,18 @@
             panel5 = new System.Windows.Forms.Panel();
             dataGridView1 = new System.Windows.Forms.DataGridView();
             ClearFieldsButton = new System.Windows.Forms.Button();
+            ButtonEdit = new System.Windows.Forms.Button();
             ButtonAdd = new System.Windows.Forms.Button();
             ButtonDelete = new System.Windows.Forms.Button();
-            ButtonEdit = new System.Windows.Forms.Button();
             panel4 = new System.Windows.Forms.Panel();
             textBox1 = new System.Windows.Forms.TextBox();
             pictureBox2 = new System.Windows.Forms.PictureBox();
+            objectAnimator1 = new ReaLTaiizor.Animate.Parrot.ObjectAnimator();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             HeaderPanel.SuspendLayout();
             panel2.SuspendLayout();
+            AddPhotoPanel.SuspendLayout();
+            ImageInputBoxPanel.SuspendLayout();
             panel3.SuspendLayout();
             panel6.SuspendLayout();
             panel5.SuspendLayout();
@@ -105,14 +109,15 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             pictureBox1.ImageLocation = "";
-            pictureBox1.Location = new System.Drawing.Point(0, 0);
+            pictureBox1.Location = new System.Drawing.Point(82, 15);
             pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(348, 221);
+            pictureBox1.Size = new System.Drawing.Size(200, 200);
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
             // 
@@ -125,17 +130,17 @@
             HeaderPanel.Location = new System.Drawing.Point(0, 0);
             HeaderPanel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             HeaderPanel.Name = "HeaderPanel";
-            HeaderPanel.Size = new System.Drawing.Size(1064, 34);
+            HeaderPanel.Size = new System.Drawing.Size(1064, 77);
             HeaderPanel.TabIndex = 19;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            label1.Location = new System.Drawing.Point(175, 43);
+            label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            label1.Location = new System.Drawing.Point(22, 20);
             label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(305, 29);
+            label1.Size = new System.Drawing.Size(404, 40);
             label1.TabIndex = 0;
             label1.Text = "Student Information System";
             // 
@@ -153,8 +158,8 @@
             // panel2
             // 
             panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            panel2.Controls.Add(label8);
-            panel2.Controls.Add(button1);
+            panel2.Controls.Add(AddPhotoPanel);
+            panel2.Controls.Add(ImageInputBoxPanel);
             panel2.Controls.Add(label7);
             panel2.Controls.Add(label6);
             panel2.Controls.Add(label5);
@@ -162,40 +167,49 @@
             panel2.Controls.Add(label3);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(InputGender);
-            panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(InputStudentID);
             panel2.Controls.Add(InputFullName);
             panel2.Controls.Add(InputYearLevel);
             panel2.Controls.Add(InputProgram);
             panel2.Controls.Add(InputContactNumber);
             panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            panel2.Location = new System.Drawing.Point(0, 34);
+            panel2.Location = new System.Drawing.Point(0, 77);
             panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             panel2.Name = "panel2";
-            panel2.Size = new System.Drawing.Size(350, 707);
+            panel2.Size = new System.Drawing.Size(350, 664);
             panel2.TabIndex = 21;
             // 
-            // label8
+            // AddPhotoPanel
             // 
-            label8.AutoSize = true;
-            label8.Location = new System.Drawing.Point(43, 234);
-            label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            label8.Name = "label8";
-            label8.Size = new System.Drawing.Size(261, 15);
-            label8.TabIndex = 32;
-            label8.Text = "Please use a 1024x1024 image that is under 2MB.";
+            AddPhotoPanel.Controls.Add(button1);
+            AddPhotoPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            AddPhotoPanel.Location = new System.Drawing.Point(0, 222);
+            AddPhotoPanel.Name = "AddPhotoPanel";
+            AddPhotoPanel.Size = new System.Drawing.Size(348, 55);
+            AddPhotoPanel.TabIndex = 33;
             // 
             // button1
             // 
-            button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            button1.Location = new System.Drawing.Point(130, 253);
+            button1.BackColor = System.Drawing.SystemColors.Control;
+            button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            button1.Location = new System.Drawing.Point(108, 6);
             button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(88, 27);
+            button1.Size = new System.Drawing.Size(125, 39);
             button1.TabIndex = 28;
             button1.Text = "Add Photo";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += TestButton_Click;
+            // 
+            // ImageInputBoxPanel
+            // 
+            ImageInputBoxPanel.Controls.Add(pictureBox1);
+            ImageInputBoxPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            ImageInputBoxPanel.Location = new System.Drawing.Point(0, 0);
+            ImageInputBoxPanel.Name = "ImageInputBoxPanel";
+            ImageInputBoxPanel.Size = new System.Drawing.Size(348, 222);
+            ImageInputBoxPanel.TabIndex = 32;
             // 
             // label7
             // 
@@ -302,20 +316,20 @@
             panel3.Controls.Add(panel5);
             panel3.Controls.Add(panel4);
             panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            panel3.Location = new System.Drawing.Point(350, 34);
+            panel3.Location = new System.Drawing.Point(350, 77);
             panel3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             panel3.Name = "panel3";
-            panel3.Size = new System.Drawing.Size(714, 707);
+            panel3.Size = new System.Drawing.Size(714, 664);
             panel3.TabIndex = 22;
             // 
             // panel7
             // 
             panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            panel7.Location = new System.Drawing.Point(0, 660);
+            panel7.Location = new System.Drawing.Point(0, 644);
             panel7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             panel7.Name = "panel7";
-            panel7.Size = new System.Drawing.Size(712, 45);
+            panel7.Size = new System.Drawing.Size(712, 18);
             panel7.TabIndex = 27;
             // 
             // panel6
@@ -324,10 +338,10 @@
             panel6.Controls.Add(DropDownB);
             panel6.Controls.Add(DropDownA);
             panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            panel6.Location = new System.Drawing.Point(0, 92);
+            panel6.Location = new System.Drawing.Point(0, 62);
             panel6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             panel6.Name = "panel6";
-            panel6.Size = new System.Drawing.Size(712, 92);
+            panel6.Size = new System.Drawing.Size(712, 66);
             panel6.TabIndex = 26;
             // 
             // DropDownB
@@ -336,7 +350,7 @@
             DropDownB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             DropDownB.FormattingEnabled = true;
             DropDownB.Items.AddRange(new object[] { "Blocks " });
-            DropDownB.Location = new System.Drawing.Point(373, 27);
+            DropDownB.Location = new System.Drawing.Point(373, 14);
             DropDownB.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             DropDownB.Name = "DropDownB";
             DropDownB.Size = new System.Drawing.Size(213, 28);
@@ -348,7 +362,7 @@
             DropDownA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             DropDownA.FormattingEnabled = true;
             DropDownA.Items.AddRange(new object[] { "Program", "Year Level" });
-            DropDownA.Location = new System.Drawing.Point(92, 27);
+            DropDownA.Location = new System.Drawing.Point(92, 14);
             DropDownA.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             DropDownA.Name = "DropDownA";
             DropDownA.Size = new System.Drawing.Size(213, 28);
@@ -359,15 +373,15 @@
             panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             panel5.Controls.Add(dataGridView1);
             panel5.Controls.Add(ClearFieldsButton);
+            panel5.Controls.Add(ButtonEdit);
             panel5.Controls.Add(ButtonAdd);
             panel5.Controls.Add(ButtonDelete);
-            panel5.Controls.Add(ButtonEdit);
             panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            panel5.Location = new System.Drawing.Point(0, 92);
-            panel5.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            panel5.Location = new System.Drawing.Point(0, 62);
+            panel5.Margin = new System.Windows.Forms.Padding(12);
             panel5.Name = "panel5";
-            panel5.Padding = new System.Windows.Forms.Padding(23, 23, 23, 23);
-            panel5.Size = new System.Drawing.Size(712, 613);
+            panel5.Padding = new System.Windows.Forms.Padding(23);
+            panel5.Size = new System.Drawing.Size(712, 600);
             panel5.TabIndex = 24;
             // 
             // dataGridView1
@@ -375,25 +389,38 @@
             dataGridView1.AllowDrop = true;
             dataGridView1.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new System.Drawing.Point(91, 177);
+            dataGridView1.Location = new System.Drawing.Point(27, 149);
             dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new System.Drawing.Size(472, 363);
+            dataGridView1.Size = new System.Drawing.Size(656, 423);
             dataGridView1.TabIndex = 28;
             dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // ClearFieldsButton
             // 
             ClearFieldsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            ClearFieldsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            ClearFieldsButton.Location = new System.Drawing.Point(204, 113);
+            ClearFieldsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            ClearFieldsButton.Location = new System.Drawing.Point(318, 85);
             ClearFieldsButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             ClearFieldsButton.Name = "ClearFieldsButton";
-            ClearFieldsButton.Size = new System.Drawing.Size(115, 38);
+            ClearFieldsButton.Size = new System.Drawing.Size(125, 38);
             ClearFieldsButton.TabIndex = 29;
             ClearFieldsButton.Text = "Clear";
             ClearFieldsButton.UseVisualStyleBackColor = true;
             ClearFieldsButton.Click += ClearFieldsButton_Click;
+            // 
+            // ButtonEdit
+            // 
+            ButtonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            ButtonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            ButtonEdit.Location = new System.Drawing.Point(170, 85);
+            ButtonEdit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            ButtonEdit.Name = "ButtonEdit";
+            ButtonEdit.Size = new System.Drawing.Size(125, 38);
+            ButtonEdit.TabIndex = 32;
+            ButtonEdit.Text = "Update";
+            ButtonEdit.UseVisualStyleBackColor = true;
+            ButtonEdit.Click += ButtonEdit_Click;
             // 
             // ButtonAdd
             // 
@@ -403,7 +430,7 @@
             ButtonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             ButtonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             ButtonAdd.ForeColor = System.Drawing.SystemColors.Window;
-            ButtonAdd.Location = new System.Drawing.Point(71, 113);
+            ButtonAdd.Location = new System.Drawing.Point(27, 85);
             ButtonAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             ButtonAdd.Name = "ButtonAdd";
             ButtonAdd.Size = new System.Drawing.Size(125, 38);
@@ -416,27 +443,14 @@
             // 
             ButtonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             ButtonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            ButtonDelete.Location = new System.Drawing.Point(440, 112);
+            ButtonDelete.Location = new System.Drawing.Point(461, 84);
             ButtonDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             ButtonDelete.Name = "ButtonDelete";
-            ButtonDelete.Size = new System.Drawing.Size(105, 38);
+            ButtonDelete.Size = new System.Drawing.Size(125, 38);
             ButtonDelete.TabIndex = 31;
             ButtonDelete.Text = "Delete";
             ButtonDelete.UseVisualStyleBackColor = true;
             ButtonDelete.Click += ButtonDelete_Click;
-            // 
-            // ButtonEdit
-            // 
-            ButtonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            ButtonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            ButtonEdit.Location = new System.Drawing.Point(327, 112);
-            ButtonEdit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            ButtonEdit.Name = "ButtonEdit";
-            ButtonEdit.Size = new System.Drawing.Size(105, 38);
-            ButtonEdit.TabIndex = 32;
-            ButtonEdit.Text = "Edit";
-            ButtonEdit.UseVisualStyleBackColor = true;
-            ButtonEdit.Click += ButtonEdit_Click;
             // 
             // panel4
             // 
@@ -446,14 +460,14 @@
             panel4.Location = new System.Drawing.Point(0, 0);
             panel4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             panel4.Name = "panel4";
-            panel4.Size = new System.Drawing.Size(712, 92);
+            panel4.Size = new System.Drawing.Size(712, 62);
             panel4.TabIndex = 23;
             // 
             // textBox1
             // 
             textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            textBox1.Location = new System.Drawing.Point(49, 30);
+            textBox1.Location = new System.Drawing.Point(49, 15);
             textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
@@ -478,14 +492,18 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(HeaderPanel);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "Form1";
-            Text = "Form1";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "BUCS SIS";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             HeaderPanel.ResumeLayout(false);
             HeaderPanel.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            AddPhotoPanel.ResumeLayout(false);
+            ImageInputBoxPanel.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel6.ResumeLayout(false);
             panel5.ResumeLayout(false);
@@ -531,6 +549,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label8;
+        private ReaLTaiizor.Animate.Parrot.ObjectAnimator objectAnimator1;
+        private System.Windows.Forms.Panel ImageInputBoxPanel;
+        private System.Windows.Forms.Panel AddPhotoPanel;
     }
 }

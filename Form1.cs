@@ -12,6 +12,8 @@ using System.Runtime.Versioning;
 using MySql.Data.MySqlClient;
 using System.Drawing.Imaging;
 using Student_Information_System.Database;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 
 /*
 INPUT FIELDS:
@@ -390,6 +392,44 @@ namespace Student_Information_System
             using (Image img = Image.FromStream(ms))
             {
                 pictureBox1.Image = new Bitmap(img);
+            }
+        }
+
+        
+        private byte[] ResizeToFit(byte[] original, int targetW, int targetH, long quality = 85L)
+        {
+            using (MemoryStream input = new MemoryStream(original))
+            using (Image src = Image.FromStream(input))
+            using (Bitmap bmp = new Bitmap(targetW, targetH))
+            using (Graphics g = Graphics.FromImage(bmp))
+            {
+                g.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                g.SmoothingMode = SmoothingMode.HighQuality;
+                g.PixelOffsetMode = PixelOffsetMode.HighQuality;
+                g.Clear(Color.White);
+
+                // scale so the image covers the whole box, then trim the overflow from the center
+                float scale = Math.Max((float)targetW / src.Width, (float)targetH / src.Height);
+                int srcW = (int)(targetW / scale);
+                int srcH = (int)(targetH / scale);
+                int srcX = (src.Width - srcW) / 2;
+                int srcY = (src.Height - srcH) / 2;
+
+                g.DrawImage(src,
+                    new Rectangle(0, 0, targetW, targetH),
+                    new Rectangle(srcX, srcY, srcW, srcH),
+                    GraphicsUnit.Pixel);
+
+                ImageCodecInfo jpeg = ImageCodecInfo.GetImageEncoders()
+                    .First(c => c.FormatID == ImageFormat.Jpeg.Guid);
+                EncoderParameters p = new EncoderParameters(1);
+                p.Param[0] = new EncoderParameter(System.Drawing.Imaging.Encoder.Quality, quality);
+
+                using (MemoryStream output = new MemoryStream())
+                {
+                    bmp.Save(output, jpeg, p);
+                    return output.ToArray();
+                }
             }
         }
 
