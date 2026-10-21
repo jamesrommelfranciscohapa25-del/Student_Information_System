@@ -128,12 +128,12 @@ namespace Student_Information_System
             g.ColumnHeadersHeight = 60;
             g.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
             g.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            g.ColumnHeadersDefaultCellStyle.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
+            g.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             g.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Black;
 
             // Rows
             g.RowTemplate.Height = 32;
-            g.DefaultCellStyle.Font = new Font("Microsoft Sans Serif", 10F);
+            g.DefaultCellStyle.Font = new Font("Segoe UI", 10F);
             g.DefaultCellStyle.Padding = new Padding(4, 0, 0, 0);
             g.DefaultCellStyle.SelectionBackColor = Color.FromArgb(60, 60, 60);
             g.DefaultCellStyle.SelectionForeColor = Color.White;

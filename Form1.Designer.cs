@@ -78,32 +78,32 @@
             // 
             // InputStudentID
             // 
-            InputStudentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            InputStudentID.Font = new System.Drawing.Font("Segoe UI", 12F);
             InputStudentID.Location = new System.Drawing.Point(19, 315);
             InputStudentID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             InputStudentID.Name = "InputStudentID";
-            InputStudentID.Size = new System.Drawing.Size(302, 26);
+            InputStudentID.Size = new System.Drawing.Size(302, 29);
             InputStudentID.TabIndex = 0;
             InputStudentID.TextChanged += InputStudentID_TextChanged;
             // 
             // InputFullName
             // 
             InputFullName.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            InputFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            InputFullName.Font = new System.Drawing.Font("Segoe UI", 12F);
             InputFullName.Location = new System.Drawing.Point(22, 375);
             InputFullName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             InputFullName.Name = "InputFullName";
-            InputFullName.Size = new System.Drawing.Size(299, 26);
+            InputFullName.Size = new System.Drawing.Size(299, 29);
             InputFullName.TabIndex = 2;
             InputFullName.TextChanged += InputFullName_TextChanged;
             // 
             // InputContactNumber
             // 
-            InputContactNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            InputContactNumber.Font = new System.Drawing.Font("Segoe UI", 12F);
             InputContactNumber.Location = new System.Drawing.Point(22, 619);
             InputContactNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             InputContactNumber.Name = "InputContactNumber";
-            InputContactNumber.Size = new System.Drawing.Size(302, 26);
+            InputContactNumber.Size = new System.Drawing.Size(302, 29);
             InputContactNumber.TabIndex = 10;
             InputContactNumber.TextChanged += InputContactNumber_TextChanged;
             // 
@@ -124,7 +124,6 @@
             // HeaderPanel
             // 
             HeaderPanel.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            HeaderPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             HeaderPanel.Controls.Add(label1);
             HeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
             HeaderPanel.Location = new System.Drawing.Point(0, 0);
@@ -214,97 +213,97 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label7.Font = new System.Drawing.Font("Segoe UI", 12F);
             label7.Location = new System.Drawing.Point(17, 592);
             label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(129, 20);
+            label7.Size = new System.Drawing.Size(128, 21);
             label7.TabIndex = 31;
             label7.Text = "Contact Number:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label6.Font = new System.Drawing.Font("Segoe UI", 12F);
             label6.Location = new System.Drawing.Point(17, 532);
             label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(73, 20);
+            label6.Size = new System.Drawing.Size(74, 21);
             label6.TabIndex = 30;
             label6.Text = "Program:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label5.Font = new System.Drawing.Font("Segoe UI", 12F);
             label5.Location = new System.Drawing.Point(17, 472);
             label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(88, 20);
+            label5.Size = new System.Drawing.Size(83, 21);
             label5.TabIndex = 29;
             label5.Text = "Year Level:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label4.Font = new System.Drawing.Font("Segoe UI", 12F);
             label4.Location = new System.Drawing.Point(17, 409);
             label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(67, 20);
+            label4.Size = new System.Drawing.Size(64, 21);
             label4.TabIndex = 28;
             label4.Text = "Gender:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label3.Font = new System.Drawing.Font("Segoe UI", 12F);
             label3.Location = new System.Drawing.Point(17, 349);
             label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(116, 20);
+            label3.Size = new System.Drawing.Size(112, 21);
             label3.TabIndex = 27;
             label3.Text = "Student Name:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label2.Location = new System.Drawing.Point(15, 289);
             label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(91, 20);
+            label2.Size = new System.Drawing.Size(85, 21);
             label2.TabIndex = 23;
             label2.Text = "Student ID:";
             // 
             // InputGender
             // 
-            InputGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            InputGender.Font = new System.Drawing.Font("Segoe UI", 12F);
             InputGender.FormattingEnabled = true;
             InputGender.Items.AddRange(new object[] { "Male", "Female", "Other", "Prefer not to say" });
             InputGender.Location = new System.Drawing.Point(22, 435);
             InputGender.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             InputGender.Name = "InputGender";
-            InputGender.Size = new System.Drawing.Size(299, 28);
+            InputGender.Size = new System.Drawing.Size(299, 29);
             InputGender.TabIndex = 26;
             // 
             // InputYearLevel
             // 
-            InputYearLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            InputYearLevel.Font = new System.Drawing.Font("Segoe UI", 12F);
             InputYearLevel.Location = new System.Drawing.Point(22, 499);
             InputYearLevel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             InputYearLevel.Name = "InputYearLevel";
-            InputYearLevel.Size = new System.Drawing.Size(299, 26);
+            InputYearLevel.Size = new System.Drawing.Size(299, 29);
             InputYearLevel.TabIndex = 6;
             InputYearLevel.TextChanged += InputYearLevel_TextChanged;
             // 
             // InputProgram
             // 
-            InputProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            InputProgram.Font = new System.Drawing.Font("Segoe UI", 12F);
             InputProgram.Location = new System.Drawing.Point(22, 559);
             InputProgram.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             InputProgram.Name = "InputProgram";
-            InputProgram.Size = new System.Drawing.Size(302, 26);
+            InputProgram.Size = new System.Drawing.Size(302, 29);
             InputProgram.TabIndex = 8;
             InputProgram.TextChanged += InputProgram_TextChanged;
             // 
@@ -324,7 +323,6 @@
             // 
             // panel7
             // 
-            panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
             panel7.Location = new System.Drawing.Point(0, 644);
             panel7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -370,7 +368,6 @@
             // 
             // panel5
             // 
-            panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             panel5.Controls.Add(dataGridView1);
             panel5.Controls.Add(ClearFieldsButton);
             panel5.Controls.Add(ButtonEdit);
@@ -399,7 +396,7 @@
             // ClearFieldsButton
             // 
             ClearFieldsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            ClearFieldsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            ClearFieldsButton.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             ClearFieldsButton.Location = new System.Drawing.Point(318, 85);
             ClearFieldsButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             ClearFieldsButton.Name = "ClearFieldsButton";
@@ -412,7 +409,7 @@
             // ButtonEdit
             // 
             ButtonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            ButtonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            ButtonEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             ButtonEdit.Location = new System.Drawing.Point(170, 85);
             ButtonEdit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             ButtonEdit.Name = "ButtonEdit";
@@ -428,7 +425,7 @@
             ButtonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             ButtonAdd.FlatAppearance.BorderSize = 0;
             ButtonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            ButtonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            ButtonAdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             ButtonAdd.ForeColor = System.Drawing.SystemColors.Window;
             ButtonAdd.Location = new System.Drawing.Point(27, 85);
             ButtonAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -442,7 +439,7 @@
             // ButtonDelete
             // 
             ButtonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            ButtonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            ButtonDelete.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             ButtonDelete.Location = new System.Drawing.Point(461, 84);
             ButtonDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             ButtonDelete.Name = "ButtonDelete";
@@ -454,7 +451,6 @@
             // 
             // panel4
             // 
-            panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             panel4.Controls.Add(textBox1);
             panel4.Dock = System.Windows.Forms.DockStyle.Top;
             panel4.Location = new System.Drawing.Point(0, 0);
@@ -466,8 +462,8 @@
             // textBox1
             // 
             textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            textBox1.Location = new System.Drawing.Point(49, 15);
+            textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            textBox1.Location = new System.Drawing.Point(49, 16);
             textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
