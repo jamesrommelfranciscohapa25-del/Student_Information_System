@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\database\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:database\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,6 +18,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|c:\\users\\jeffl\\onedrive\\documents\\github\\student_information_system\\database\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:database\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|c:\\users\\jeffl\\onedrive\\documents\\github\\student_information_system\\forms\\app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:forms\\app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|c:\\users\\jeffl\\onedrive\\documents\\github\\student_information_system\\forms\\app\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:forms\\app\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|c:\\users\\jeffl\\onedrive\\documents\\github\\student_information_system\\forms\\auth\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:forms\\auth\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|c:\\users\\jeffl\\onedrive\\documents\\github\\student_information_system\\student information system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E2BD9DD4-7DCB-4437-8A1B-0D92FC8187D3}|Student Information System.csproj|solutionrelative:student information system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -26,6 +47,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 64,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 5,
           "Children": [
             {
@@ -35,6 +57,67 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+=======
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatabaseConnection.cs",
+              "DocumentMoniker": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Database\\DatabaseConnection.cs",
+              "RelativeDocumentMoniker": "Database\\DatabaseConnection.cs",
+              "ToolTip": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Database\\DatabaseConnection.cs*",
+              "RelativeToolTip": "Database\\DatabaseConnection.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T09:32:39.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentProfile.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Forms\\App\\StudentProfile.cs",
+              "RelativeDocumentMoniker": "Forms\\App\\StudentProfile.cs",
+              "ToolTip": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Forms\\App\\StudentProfile.cs [Design]",
+              "RelativeToolTip": "Forms\\App\\StudentProfile.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T09:29:34.439Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Forms\\Auth\\Login.cs",
+              "RelativeDocumentMoniker": "Forms\\Auth\\Login.cs",
+              "ToolTip": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Forms\\Auth\\Login.cs [Design]",
+              "RelativeToolTip": "Forms\\Auth\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T09:10:30.827Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Student Information System",
+              "DocumentMoniker": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Student Information System.csproj",
+              "RelativeDocumentMoniker": "Student Information System.csproj",
+              "ToolTip": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Student Information System.csproj",
+              "RelativeToolTip": "Student Information System.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAApwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-21T09:10:00.067Z",
+              "EditorCaption": ""
+>>>>>>> Stashed changes
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -49,6 +132,7 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+<<<<<<< Updated upstream
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DatabaseConnection.cs",
@@ -93,8 +177,18 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\anshe\\OneDrive\\Desktop\\Student_Information_System\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
+=======
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Forms\\App\\Form1.cs",
+              "RelativeDocumentMoniker": "Forms\\App\\Form1.cs",
+              "ToolTip": "C:\\Users\\jeffl\\OneDrive\\Documents\\GitHub\\Student_Information_System\\Forms\\App\\Form1.cs [Design]",
+              "RelativeToolTip": "Forms\\App\\Form1.cs [Design]",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T02:10:15.545Z"
+              "WhenOpened": "2026-10-21T09:06:19.578Z",
+              "EditorCaption": " [Design]"
             }
           ]
         },

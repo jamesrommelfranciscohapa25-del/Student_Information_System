@@ -9,10 +9,10 @@ namespace Student_Information_System.Database
         // maraming salamat
         private static readonly string connectionString =
             "server=127.0.0.1;" + // palitan niyo sang sa hostname niyo
-            "port=3306;" +
+            "port=3307;" +
             "database=stud_db;" + // check comment sa pinakababa (code sa mysql kung gusto niyo i try)
             "uid=root;" +
-            "pwd=powerRangers;" + // palitan niyo sang password niyo sa mysql
+            "pwd=Je197@du;" + // palitan niyo sang password niyo sa mysql
             "charset=utf8mb4;";
 
         public static MySqlConnection GetConnection()
