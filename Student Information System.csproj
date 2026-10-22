@@ -10,6 +10,11 @@
 	 <ApplicationHighDpiMode>DpiUnaware</ApplicationHighDpiMode>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Resources\MessageBox\**" />
+    <EmbeddedResource Remove="Resources\MessageBox\**" />
+    <None Remove="Resources\MessageBox\**" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Update="System">
     </Reference>
     <Reference Include="System.Management" />
@@ -47,8 +52,5 @@
   <ItemGroup Label="Compile items now included by globbing that were not in the original project file">
     <Compile Remove="Models\StudentProfile.cs" />
     <Compile Remove="Models\AcademicProfile.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\MessageBox\" />
   </ItemGroup>
 </Project>

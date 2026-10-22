@@ -371,9 +371,9 @@
             TestButton.Alpha = 20;
             TestButton.BackColor = System.Drawing.Color.Transparent;
             TestButton.Background = true;
-            TestButton.Background_WidthPen = 0F;
+            TestButton.Background_WidthPen = 2F;
             TestButton.BackgroundPen = true;
-            TestButton.ColorBackground = System.Drawing.Color.FromArgb(249, 115, 22);
+            TestButton.ColorBackground = System.Drawing.Color.White;
             TestButton.ColorBackground_1 = System.Drawing.Color.FromArgb(37, 52, 68);
             TestButton.ColorBackground_2 = System.Drawing.Color.FromArgb(41, 63, 86);
             TestButton.ColorBackground_Pen = System.Drawing.Color.FromArgb(29, 78, 216);
@@ -388,7 +388,7 @@
             TestButton.Effect_2_ColorBackground = System.Drawing.Color.White;
             TestButton.Effect_2_Transparency = 20;
             TestButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            TestButton.ForeColor = System.Drawing.Color.FromArgb(245, 245, 245);
+            TestButton.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
             TestButton.Lighting = false;
             TestButton.LinearGradient_Background = false;
             TestButton.LinearGradientPen = false;
@@ -496,7 +496,7 @@
             ButtonDelete.Background = true;
             ButtonDelete.Background_WidthPen = 0F;
             ButtonDelete.BackgroundPen = true;
-            ButtonDelete.ColorBackground = System.Drawing.Color.FromArgb(249, 115, 22);
+            ButtonDelete.ColorBackground = System.Drawing.Color.FromArgb(220, 38, 38);
             ButtonDelete.ColorBackground_1 = System.Drawing.Color.FromArgb(37, 52, 68);
             ButtonDelete.ColorBackground_2 = System.Drawing.Color.FromArgb(41, 63, 86);
             ButtonDelete.ColorBackground_Pen = System.Drawing.Color.FromArgb(29, 78, 216);
@@ -763,11 +763,11 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            label12.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+            label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            label12.ForeColor = System.Drawing.Color.FromArgb(203, 213, 225);
             label12.Location = new System.Drawing.Point(12, 35);
             label12.Name = "label12";
-            label12.Size = new System.Drawing.Size(249, 32);
+            label12.Size = new System.Drawing.Size(261, 32);
             label12.TabIndex = 46;
             label12.Text = "BU College of Science";
             // 
@@ -775,12 +775,12 @@
             // 
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            label1.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+            label1.ForeColor = System.Drawing.Color.FromArgb(203, 213, 225);
             label1.Location = new System.Drawing.Point(12, 67);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(204, 21);
             label1.TabIndex = 45;
-            label1.Text = "Student Infromation System";
+            label1.Text = "Student Information System";
             // 
             // roundedPanel7
             // 

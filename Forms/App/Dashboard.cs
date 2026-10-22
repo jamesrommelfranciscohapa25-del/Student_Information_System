@@ -85,10 +85,6 @@ namespace Student_Information_System.Forms.App
             combo.SelectedIndex = 0;
         }
 
-        // ---------- Reading / writing Cyber controls ----------
-
-        // Returns the real value of an input control (trimmed).
-        // Cyber text boxes keep what you type in an inner TextBox, so the outer .Text can be empty.
         private static string GetValue(Control c)
         {
             if (c is ComboBox cb)
@@ -105,7 +101,6 @@ namespace Student_Information_System.Forms.App
             return (c.Text ?? string.Empty).Trim();
         }
 
-        // Sets the control's Text and also any inner TextBox, then forces a redraw
         private void SetText(Control c, string value)
         {
             c.Text = value;

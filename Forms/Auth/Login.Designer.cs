@@ -34,13 +34,13 @@ namespace Student_Information_System.Forms.Auth
         private void InitializeComponent()
         {
             roundedPanel1 = new Resources.Components.RoundedPanel();
+            BtnLogin = new CyberButton();
             label3 = new System.Windows.Forms.Label();
             passwordInput = new CyberTextBox();
             label2 = new System.Windows.Forms.Label();
             usernameIput = new CyberTextBox();
             label1 = new System.Windows.Forms.Label();
             label12 = new System.Windows.Forms.Label();
-            BtnLogin = new CyberButton();
             roundedPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -60,12 +60,52 @@ namespace Student_Information_System.Forms.Auth
             roundedPanel1.Size = new System.Drawing.Size(484, 621);
             roundedPanel1.TabIndex = 7;
             // 
+            // BtnLogin
+            // 
+            BtnLogin.Alpha = 20;
+            BtnLogin.BackColor = System.Drawing.Color.Transparent;
+            BtnLogin.Background = true;
+            BtnLogin.Background_WidthPen = 0F;
+            BtnLogin.BackgroundPen = true;
+            BtnLogin.ColorBackground = System.Drawing.Color.FromArgb(249, 115, 22);
+            BtnLogin.ColorBackground_1 = System.Drawing.Color.FromArgb(37, 52, 68);
+            BtnLogin.ColorBackground_2 = System.Drawing.Color.FromArgb(41, 63, 86);
+            BtnLogin.ColorBackground_Pen = System.Drawing.Color.FromArgb(29, 78, 216);
+            BtnLogin.ColorLighting = System.Drawing.Color.FromArgb(29, 200, 238);
+            BtnLogin.ColorPen_1 = System.Drawing.Color.FromArgb(37, 52, 68);
+            BtnLogin.ColorPen_2 = System.Drawing.Color.FromArgb(41, 63, 86);
+            BtnLogin.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            BtnLogin.Effect_1 = true;
+            BtnLogin.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(29, 200, 238);
+            BtnLogin.Effect_1_Transparency = 25;
+            BtnLogin.Effect_2 = true;
+            BtnLogin.Effect_2_ColorBackground = System.Drawing.Color.White;
+            BtnLogin.Effect_2_Transparency = 20;
+            BtnLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            BtnLogin.ForeColor = System.Drawing.Color.FromArgb(245, 245, 245);
+            BtnLogin.Lighting = false;
+            BtnLogin.LinearGradient_Background = false;
+            BtnLogin.LinearGradientPen = false;
+            BtnLogin.Location = new System.Drawing.Point(58, 411);
+            BtnLogin.Name = "BtnLogin";
+            BtnLogin.PenWidth = 15;
+            BtnLogin.Rounding = true;
+            BtnLogin.RoundingInt = 70;
+            BtnLogin.Size = new System.Drawing.Size(353, 34);
+            BtnLogin.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            BtnLogin.TabIndex = 52;
+            BtnLogin.Tag = "Fill";
+            BtnLogin.TextButton = "Login";
+            BtnLogin.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            BtnLogin.Timer_Effect_1 = 5;
+            BtnLogin.Timer_RGB = 300;
+            // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label3.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
-            label3.Location = new System.Drawing.Point(58, 306);
+            label3.Location = new System.Drawing.Point(58, 293);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(90, 15);
             label3.TabIndex = 51;
@@ -89,7 +129,7 @@ namespace Student_Information_System.Forms.Auth
             passwordInput.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
             passwordInput.Lighting = false;
             passwordInput.LinearGradientPen = false;
-            passwordInput.Location = new System.Drawing.Point(58, 324);
+            passwordInput.Location = new System.Drawing.Point(58, 311);
             passwordInput.Name = "passwordInput";
             passwordInput.PenWidth = 15;
             passwordInput.RGB = false;
@@ -154,63 +194,23 @@ namespace Student_Information_System.Forms.Auth
             // 
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            label1.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
-            label1.Location = new System.Drawing.Point(58, 176);
+            label1.ForeColor = System.Drawing.Color.FromArgb(15, 42, 74);
+            label1.Location = new System.Drawing.Point(58, 160);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(204, 21);
             label1.TabIndex = 48;
-            label1.Text = "Student Infromation System";
+            label1.Text = "Student Information System";
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            label12.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
-            label12.Location = new System.Drawing.Point(58, 144);
+            label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            label12.ForeColor = System.Drawing.Color.FromArgb(15, 42, 74);
+            label12.Location = new System.Drawing.Point(58, 128);
             label12.Name = "label12";
-            label12.Size = new System.Drawing.Size(177, 32);
+            label12.Size = new System.Drawing.Size(192, 32);
             label12.TabIndex = 47;
             label12.Text = "Bicol University";
-            // 
-            // BtnLogin
-            // 
-            BtnLogin.Alpha = 20;
-            BtnLogin.BackColor = System.Drawing.Color.Transparent;
-            BtnLogin.Background = true;
-            BtnLogin.Background_WidthPen = 0F;
-            BtnLogin.BackgroundPen = true;
-            BtnLogin.ColorBackground = System.Drawing.Color.FromArgb(249, 115, 22);
-            BtnLogin.ColorBackground_1 = System.Drawing.Color.FromArgb(37, 52, 68);
-            BtnLogin.ColorBackground_2 = System.Drawing.Color.FromArgb(41, 63, 86);
-            BtnLogin.ColorBackground_Pen = System.Drawing.Color.FromArgb(29, 78, 216);
-            BtnLogin.ColorLighting = System.Drawing.Color.FromArgb(29, 200, 238);
-            BtnLogin.ColorPen_1 = System.Drawing.Color.FromArgb(37, 52, 68);
-            BtnLogin.ColorPen_2 = System.Drawing.Color.FromArgb(41, 63, 86);
-            BtnLogin.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            BtnLogin.Effect_1 = true;
-            BtnLogin.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(29, 200, 238);
-            BtnLogin.Effect_1_Transparency = 25;
-            BtnLogin.Effect_2 = true;
-            BtnLogin.Effect_2_ColorBackground = System.Drawing.Color.White;
-            BtnLogin.Effect_2_Transparency = 20;
-            BtnLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
-            BtnLogin.ForeColor = System.Drawing.Color.FromArgb(245, 245, 245);
-            BtnLogin.Lighting = false;
-            BtnLogin.LinearGradient_Background = false;
-            BtnLogin.LinearGradientPen = false;
-            BtnLogin.Location = new System.Drawing.Point(172, 395);
-            BtnLogin.Name = "BtnLogin";
-            BtnLogin.PenWidth = 15;
-            BtnLogin.Rounding = true;
-            BtnLogin.RoundingInt = 70;
-            BtnLogin.Size = new System.Drawing.Size(125, 34);
-            BtnLogin.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            BtnLogin.TabIndex = 52;
-            BtnLogin.Tag = "Fill";
-            BtnLogin.TextButton = "Login";
-            BtnLogin.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            BtnLogin.Timer_Effect_1 = 5;
-            BtnLogin.Timer_RGB = 300;
             // 
             // Login
             // 
