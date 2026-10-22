@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.Versioning;
 using Student_Information_System.Forms.Auth;
+using Student_Information_System.Forms.App;
 
 namespace Student_Information_System
 {

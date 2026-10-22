@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Student_Information_System.Database;
+using Student_Information_System.Forms.App;
 using MySql.Data.MySqlClient;
 /*
 design:
@@ -130,7 +131,7 @@ namespace Student_Information_System.Forms.Auth
                         if (count > 0)
                         {
                             MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            Form1 mainForm = new Form1();
+                            Dashboard mainForm = new Dashboard();
                             mainForm.Show();
 
                             this.Hide();
