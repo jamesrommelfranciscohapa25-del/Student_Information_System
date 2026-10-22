@@ -90,7 +90,7 @@ namespace Student_Information_System.Forms.Auth
         //clear input fields
         private void ClearForm()
         {
-            SetText(usernameIput, string.Empty);
+            SetText(usernameInput, string.Empty);
             SetText(passwordInput, string.Empty);
         }
 
@@ -142,7 +142,7 @@ namespace Student_Information_System.Forms.Auth
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            string username = GetValue(usernameIput);
+            string username = GetValue(usernameInput);
             string password = GetValue(passwordInput);
 
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))

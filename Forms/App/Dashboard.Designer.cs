@@ -60,6 +60,7 @@
             label9 = new System.Windows.Forms.Label();
             sortProgram = new ReaLTaiizor.Controls.CyberComboBox();
             roundedPanel6 = new Resources.Components.RoundedPanel();
+            pictureBox2 = new System.Windows.Forms.PictureBox();
             label12 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             roundedPanel7 = new Resources.Components.RoundedPanel();
@@ -71,6 +72,7 @@
             roundedPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             roundedPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // roundedPanel1
@@ -752,6 +754,7 @@
             // roundedPanel6
             // 
             roundedPanel6.BackColor = System.Drawing.Color.FromArgb(15, 42, 74);
+            roundedPanel6.Controls.Add(pictureBox2);
             roundedPanel6.Controls.Add(label12);
             roundedPanel6.Controls.Add(label1);
             roundedPanel6.Dock = System.Windows.Forms.DockStyle.Top;
@@ -760,12 +763,23 @@
             roundedPanel6.Size = new System.Drawing.Size(1184, 100);
             roundedPanel6.TabIndex = 45;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            pictureBox2.Image = Properties.Resources._10_150x150;
+            pictureBox2.Location = new System.Drawing.Point(25, 24);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new System.Drawing.Size(64, 64);
+            pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 47;
+            pictureBox2.TabStop = false;
+            // 
             // label12
             // 
             label12.AutoSize = true;
             label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            label12.ForeColor = System.Drawing.Color.FromArgb(203, 213, 225);
-            label12.Location = new System.Drawing.Point(12, 35);
+            label12.ForeColor = System.Drawing.Color.FromArgb(249, 115, 22);
+            label12.Location = new System.Drawing.Point(95, 35);
             label12.Name = "label12";
             label12.Size = new System.Drawing.Size(261, 32);
             label12.TabIndex = 46;
@@ -776,7 +790,7 @@
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label1.ForeColor = System.Drawing.Color.FromArgb(203, 213, 225);
-            label1.Location = new System.Drawing.Point(12, 67);
+            label1.Location = new System.Drawing.Point(95, 67);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(204, 21);
             label1.TabIndex = 45;
@@ -817,6 +831,7 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             roundedPanel6.ResumeLayout(false);
             roundedPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -856,5 +871,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

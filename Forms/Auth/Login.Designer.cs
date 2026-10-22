@@ -34,31 +34,46 @@ namespace Student_Information_System.Forms.Auth
         private void InitializeComponent()
         {
             roundedPanel1 = new Resources.Components.RoundedPanel();
+            picLogo = new System.Windows.Forms.PictureBox();
             BtnLogin = new CyberButton();
             label3 = new System.Windows.Forms.Label();
             passwordInput = new CyberTextBox();
             label2 = new System.Windows.Forms.Label();
-            usernameIput = new CyberTextBox();
-            label1 = new System.Windows.Forms.Label();
-            label12 = new System.Windows.Forms.Label();
+            usernameInput = new CyberTextBox();
+            Subtitle = new System.Windows.Forms.Label();
+            Title = new System.Windows.Forms.Label();
             roundedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             SuspendLayout();
             // 
             // roundedPanel1
             // 
             roundedPanel1.BackColor = System.Drawing.Color.White;
+            roundedPanel1.Controls.Add(picLogo);
             roundedPanel1.Controls.Add(BtnLogin);
             roundedPanel1.Controls.Add(label3);
             roundedPanel1.Controls.Add(passwordInput);
             roundedPanel1.Controls.Add(label2);
-            roundedPanel1.Controls.Add(usernameIput);
-            roundedPanel1.Controls.Add(label1);
-            roundedPanel1.Controls.Add(label12);
+            roundedPanel1.Controls.Add(usernameInput);
+            roundedPanel1.Controls.Add(Subtitle);
+            roundedPanel1.Controls.Add(Title);
             roundedPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             roundedPanel1.Location = new System.Drawing.Point(350, 120);
             roundedPanel1.Name = "roundedPanel1";
             roundedPanel1.Size = new System.Drawing.Size(484, 621);
             roundedPanel1.TabIndex = 7;
+            // 
+            // picLogo
+            // 
+            picLogo.BackColor = System.Drawing.Color.Transparent;
+            picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            picLogo.Image = Properties.Resources._10_150x150;
+            picLogo.Location = new System.Drawing.Point(182, 20);
+            picLogo.Name = "picLogo";
+            picLogo.Size = new System.Drawing.Size(128, 128);
+            picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            picLogo.TabIndex = 53;
+            picLogo.TabStop = false;
             // 
             // BtnLogin
             // 
@@ -156,61 +171,63 @@ namespace Student_Information_System.Forms.Auth
             label2.TabIndex = 49;
             label2.Text = "Enter Username:";
             // 
-            // usernameIput
+            // usernameInput
             // 
-            usernameIput.Alpha = 20;
-            usernameIput.BackColor = System.Drawing.Color.Transparent;
-            usernameIput.Background_WidthPen = 1F;
-            usernameIput.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            usernameIput.BackgroundPen = true;
-            usernameIput.ColorBackground = System.Drawing.Color.White;
-            usernameIput.ColorBackground_Pen = System.Drawing.Color.FromArgb(29, 78, 216);
-            usernameIput.ColorLighting = System.Drawing.Color.FromArgb(29, 200, 238);
-            usernameIput.ColorPen_1 = System.Drawing.Color.FromArgb(29, 200, 238);
-            usernameIput.ColorPen_2 = System.Drawing.Color.FromArgb(37, 52, 68);
-            usernameIput.Cursor = System.Windows.Forms.Cursors.Hand;
-            usernameIput.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            usernameIput.Font = new System.Drawing.Font("Segoe UI", 8F);
-            usernameIput.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
-            usernameIput.Lighting = false;
-            usernameIput.LinearGradientPen = false;
-            usernameIput.Location = new System.Drawing.Point(58, 241);
-            usernameIput.Name = "usernameIput";
-            usernameIput.PenWidth = 15;
-            usernameIput.RGB = false;
-            usernameIput.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            usernameIput.Rounding = true;
-            usernameIput.RoundingInt = 30;
-            usernameIput.Size = new System.Drawing.Size(353, 34);
-            usernameIput.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            usernameIput.TabIndex = 31;
-            usernameIput.Tag = "Cyber";
-            usernameIput.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            usernameIput.TextButton = "";
-            usernameIput.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            usernameIput.Timer_RGB = 300;
+            usernameInput.Alpha = 20;
+            usernameInput.BackColor = System.Drawing.Color.Transparent;
+            usernameInput.Background_WidthPen = 1F;
+            usernameInput.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            usernameInput.BackgroundPen = true;
+            usernameInput.ColorBackground = System.Drawing.Color.White;
+            usernameInput.ColorBackground_Pen = System.Drawing.Color.FromArgb(29, 78, 216);
+            usernameInput.ColorLighting = System.Drawing.Color.FromArgb(29, 200, 238);
+            usernameInput.ColorPen_1 = System.Drawing.Color.FromArgb(29, 200, 238);
+            usernameInput.ColorPen_2 = System.Drawing.Color.FromArgb(37, 52, 68);
+            usernameInput.Cursor = System.Windows.Forms.Cursors.Hand;
+            usernameInput.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            usernameInput.Font = new System.Drawing.Font("Segoe UI", 8F);
+            usernameInput.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
+            usernameInput.Lighting = false;
+            usernameInput.LinearGradientPen = false;
+            usernameInput.Location = new System.Drawing.Point(58, 241);
+            usernameInput.Name = "usernameInput";
+            usernameInput.PenWidth = 15;
+            usernameInput.RGB = false;
+            usernameInput.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            usernameInput.Rounding = true;
+            usernameInput.RoundingInt = 30;
+            usernameInput.Size = new System.Drawing.Size(353, 34);
+            usernameInput.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            usernameInput.TabIndex = 31;
+            usernameInput.Tag = "Cyber";
+            usernameInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            usernameInput.TextButton = "";
+            usernameInput.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            usernameInput.Timer_RGB = 300;
             // 
-            // label1
+            // Subtitle
             // 
-            label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            label1.ForeColor = System.Drawing.Color.FromArgb(15, 42, 74);
-            label1.Location = new System.Drawing.Point(58, 160);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(204, 21);
-            label1.TabIndex = 48;
-            label1.Text = "Student Information System";
+            Subtitle.AutoSize = true;
+            Subtitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            Subtitle.ForeColor = System.Drawing.Color.FromArgb(15, 42, 74);
+            Subtitle.Location = new System.Drawing.Point(147, 183);
+            Subtitle.Name = "Subtitle";
+            Subtitle.Size = new System.Drawing.Size(204, 21);
+            Subtitle.TabIndex = 48;
+            Subtitle.Text = "Student Information System";
+            Subtitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label12
+            // Title
             // 
-            label12.AutoSize = true;
-            label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            label12.ForeColor = System.Drawing.Color.FromArgb(15, 42, 74);
-            label12.Location = new System.Drawing.Point(58, 128);
-            label12.Name = "label12";
-            label12.Size = new System.Drawing.Size(192, 32);
-            label12.TabIndex = 47;
-            label12.Text = "Bicol University";
+            Title.AutoSize = true;
+            Title.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            Title.ForeColor = System.Drawing.Color.FromArgb(15, 42, 74);
+            Title.Location = new System.Drawing.Point(136, 151);
+            Title.Name = "Title";
+            Title.Size = new System.Drawing.Size(225, 32);
+            Title.TabIndex = 47;
+            Title.Text = "College Of Science";
+            Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Login
             // 
@@ -226,17 +243,19 @@ namespace Student_Information_System.Forms.Auth
             Text = "Login";
             roundedPanel1.ResumeLayout(false);
             roundedPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private Resources.Components.RoundedPanel roundedPanel1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Title;
+        private System.Windows.Forms.Label Subtitle;
         private System.Windows.Forms.Label label3;
         private CyberTextBox passwordInput;
         private System.Windows.Forms.Label label2;
-        private CyberTextBox usernameIput;
+        private CyberTextBox usernameInput;
         private CyberButton BtnLogin;
+        private System.Windows.Forms.PictureBox picLogo;
     }
 }
