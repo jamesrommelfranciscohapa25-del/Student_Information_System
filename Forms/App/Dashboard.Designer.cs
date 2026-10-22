@@ -50,8 +50,8 @@
             label8 = new System.Windows.Forms.Label();
             searchBar = new ReaLTaiizor.Controls.CyberTextBox();
             ButtonDelete = new ReaLTaiizor.Controls.CyberButton();
-            ClearFieldsButton = new ReaLTaiizor.Controls.CyberButton();
             ButtonEdit = new ReaLTaiizor.Controls.CyberButton();
+            ClearFieldsButton = new ReaLTaiizor.Controls.CyberButton();
             ButtonAdd = new ReaLTaiizor.Controls.CyberButton();
             roundedPanel5 = new Resources.Components.RoundedPanel();
             dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -60,6 +60,7 @@
             label9 = new System.Windows.Forms.Label();
             sortProgram = new ReaLTaiizor.Controls.CyberComboBox();
             roundedPanel6 = new Resources.Components.RoundedPanel();
+            label12 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             roundedPanel7 = new Resources.Components.RoundedPanel();
             roundedPanel1.SuspendLayout();
@@ -82,7 +83,7 @@
             roundedPanel1.Location = new System.Drawing.Point(12, 108);
             roundedPanel1.Name = "roundedPanel1";
             roundedPanel1.Padding = new System.Windows.Forms.Padding(12);
-            roundedPanel1.Size = new System.Drawing.Size(302, 722);
+            roundedPanel1.Size = new System.Drawing.Size(302, 690);
             roundedPanel1.TabIndex = 3;
             // 
             // label11
@@ -114,7 +115,7 @@
             roundedPanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             roundedPanel4.Location = new System.Drawing.Point(12, 326);
             roundedPanel4.Name = "roundedPanel4";
-            roundedPanel4.Size = new System.Drawing.Size(278, 384);
+            roundedPanel4.Size = new System.Drawing.Size(278, 352);
             roundedPanel4.TabIndex = 31;
             // 
             // InputContactNumber
@@ -434,14 +435,14 @@
             roundedPanel2.Controls.Add(label8);
             roundedPanel2.Controls.Add(searchBar);
             roundedPanel2.Controls.Add(ButtonDelete);
-            roundedPanel2.Controls.Add(ClearFieldsButton);
             roundedPanel2.Controls.Add(ButtonEdit);
+            roundedPanel2.Controls.Add(ClearFieldsButton);
             roundedPanel2.Controls.Add(ButtonAdd);
             roundedPanel2.Controls.Add(roundedPanel5);
             roundedPanel2.Location = new System.Drawing.Point(320, 108);
             roundedPanel2.Name = "roundedPanel2";
             roundedPanel2.Padding = new System.Windows.Forms.Padding(12);
-            roundedPanel2.Size = new System.Drawing.Size(852, 722);
+            roundedPanel2.Size = new System.Drawing.Size(852, 690);
             roundedPanel2.TabIndex = 4;
             // 
             // label8
@@ -522,51 +523,11 @@
             ButtonDelete.Size = new System.Drawing.Size(125, 34);
             ButtonDelete.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             ButtonDelete.TabIndex = 44;
-            ButtonDelete.Tag = "Cyber";
+            ButtonDelete.Tag = "Fill";
             ButtonDelete.TextButton = "Delete";
             ButtonDelete.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             ButtonDelete.Timer_Effect_1 = 5;
             ButtonDelete.Timer_RGB = 300;
-            // 
-            // ClearFieldsButton
-            // 
-            ClearFieldsButton.Alpha = 20;
-            ClearFieldsButton.BackColor = System.Drawing.Color.Transparent;
-            ClearFieldsButton.Background = true;
-            ClearFieldsButton.Background_WidthPen = 2F;
-            ClearFieldsButton.BackgroundPen = true;
-            ClearFieldsButton.ColorBackground = System.Drawing.Color.White;
-            ClearFieldsButton.ColorBackground_1 = System.Drawing.Color.FromArgb(37, 52, 68);
-            ClearFieldsButton.ColorBackground_2 = System.Drawing.Color.FromArgb(41, 63, 86);
-            ClearFieldsButton.ColorBackground_Pen = System.Drawing.Color.FromArgb(29, 78, 216);
-            ClearFieldsButton.ColorLighting = System.Drawing.Color.FromArgb(29, 200, 238);
-            ClearFieldsButton.ColorPen_1 = System.Drawing.Color.FromArgb(37, 52, 68);
-            ClearFieldsButton.ColorPen_2 = System.Drawing.Color.FromArgb(41, 63, 86);
-            ClearFieldsButton.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            ClearFieldsButton.Effect_1 = true;
-            ClearFieldsButton.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(29, 200, 238);
-            ClearFieldsButton.Effect_1_Transparency = 25;
-            ClearFieldsButton.Effect_2 = true;
-            ClearFieldsButton.Effect_2_ColorBackground = System.Drawing.Color.White;
-            ClearFieldsButton.Effect_2_Transparency = 20;
-            ClearFieldsButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            ClearFieldsButton.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
-            ClearFieldsButton.Lighting = false;
-            ClearFieldsButton.LinearGradient_Background = false;
-            ClearFieldsButton.LinearGradientPen = false;
-            ClearFieldsButton.Location = new System.Drawing.Point(565, 56);
-            ClearFieldsButton.Name = "ClearFieldsButton";
-            ClearFieldsButton.PenWidth = 15;
-            ClearFieldsButton.Rounding = true;
-            ClearFieldsButton.RoundingInt = 70;
-            ClearFieldsButton.Size = new System.Drawing.Size(130, 34);
-            ClearFieldsButton.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            ClearFieldsButton.TabIndex = 43;
-            ClearFieldsButton.Tag = "Cyber";
-            ClearFieldsButton.TextButton = "Clear";
-            ClearFieldsButton.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            ClearFieldsButton.Timer_Effect_1 = 5;
-            ClearFieldsButton.Timer_RGB = 300;
             // 
             // ButtonEdit
             // 
@@ -602,11 +563,51 @@
             ButtonEdit.Size = new System.Drawing.Size(130, 34);
             ButtonEdit.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             ButtonEdit.TabIndex = 42;
-            ButtonEdit.Tag = "Cyber";
+            ButtonEdit.Tag = "Bones";
             ButtonEdit.TextButton = "Update";
             ButtonEdit.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             ButtonEdit.Timer_Effect_1 = 5;
             ButtonEdit.Timer_RGB = 300;
+            // 
+            // ClearFieldsButton
+            // 
+            ClearFieldsButton.Alpha = 20;
+            ClearFieldsButton.BackColor = System.Drawing.Color.Transparent;
+            ClearFieldsButton.Background = true;
+            ClearFieldsButton.Background_WidthPen = 2F;
+            ClearFieldsButton.BackgroundPen = true;
+            ClearFieldsButton.ColorBackground = System.Drawing.Color.White;
+            ClearFieldsButton.ColorBackground_1 = System.Drawing.Color.FromArgb(37, 52, 68);
+            ClearFieldsButton.ColorBackground_2 = System.Drawing.Color.FromArgb(41, 63, 86);
+            ClearFieldsButton.ColorBackground_Pen = System.Drawing.Color.FromArgb(29, 78, 216);
+            ClearFieldsButton.ColorLighting = System.Drawing.Color.FromArgb(29, 200, 238);
+            ClearFieldsButton.ColorPen_1 = System.Drawing.Color.FromArgb(37, 52, 68);
+            ClearFieldsButton.ColorPen_2 = System.Drawing.Color.FromArgb(41, 63, 86);
+            ClearFieldsButton.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            ClearFieldsButton.Effect_1 = true;
+            ClearFieldsButton.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(29, 200, 238);
+            ClearFieldsButton.Effect_1_Transparency = 25;
+            ClearFieldsButton.Effect_2 = true;
+            ClearFieldsButton.Effect_2_ColorBackground = System.Drawing.Color.White;
+            ClearFieldsButton.Effect_2_Transparency = 20;
+            ClearFieldsButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            ClearFieldsButton.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
+            ClearFieldsButton.Lighting = false;
+            ClearFieldsButton.LinearGradient_Background = false;
+            ClearFieldsButton.LinearGradientPen = false;
+            ClearFieldsButton.Location = new System.Drawing.Point(565, 56);
+            ClearFieldsButton.Name = "ClearFieldsButton";
+            ClearFieldsButton.PenWidth = 15;
+            ClearFieldsButton.Rounding = true;
+            ClearFieldsButton.RoundingInt = 70;
+            ClearFieldsButton.Size = new System.Drawing.Size(130, 34);
+            ClearFieldsButton.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            ClearFieldsButton.TabIndex = 43;
+            ClearFieldsButton.Tag = "Bones";
+            ClearFieldsButton.TextButton = "Clear";
+            ClearFieldsButton.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            ClearFieldsButton.Timer_Effect_1 = 5;
+            ClearFieldsButton.Timer_RGB = 300;
             // 
             // ButtonAdd
             // 
@@ -642,7 +643,7 @@
             ButtonAdd.Size = new System.Drawing.Size(125, 34);
             ButtonAdd.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             ButtonAdd.TabIndex = 32;
-            ButtonAdd.Tag = "Cyber";
+            ButtonAdd.Tag = "Fill";
             ButtonAdd.TextButton = "Add Student";
             ButtonAdd.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             ButtonAdd.Timer_Effect_1 = 5;
@@ -657,9 +658,9 @@
             roundedPanel5.Controls.Add(label9);
             roundedPanel5.Controls.Add(sortProgram);
             roundedPanel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            roundedPanel5.Location = new System.Drawing.Point(12, 107);
+            roundedPanel5.Location = new System.Drawing.Point(12, 104);
             roundedPanel5.Name = "roundedPanel5";
-            roundedPanel5.Size = new System.Drawing.Size(828, 603);
+            roundedPanel5.Size = new System.Drawing.Size(828, 574);
             roundedPanel5.TabIndex = 41;
             // 
             // dataGridView1
@@ -672,7 +673,7 @@
             dataGridView1.Location = new System.Drawing.Point(17, 68);
             dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new System.Drawing.Size(800, 523);
+            dataGridView1.Size = new System.Drawing.Size(800, 489);
             dataGridView1.TabIndex = 42;
             dataGridView1.CellClick += dataGridView1_CellClick;
             // 
@@ -751,6 +752,7 @@
             // roundedPanel6
             // 
             roundedPanel6.BackColor = System.Drawing.Color.FromArgb(15, 42, 74);
+            roundedPanel6.Controls.Add(label12);
             roundedPanel6.Controls.Add(label1);
             roundedPanel6.Dock = System.Windows.Forms.DockStyle.Top;
             roundedPanel6.Location = new System.Drawing.Point(0, 0);
@@ -758,14 +760,25 @@
             roundedPanel6.Size = new System.Drawing.Size(1184, 100);
             roundedPanel6.TabIndex = 45;
             // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label12.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+            label12.Location = new System.Drawing.Point(12, 35);
+            label12.Name = "label12";
+            label12.Size = new System.Drawing.Size(177, 32);
+            label12.TabIndex = 46;
+            label12.Text = "Bicol University";
+            // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label1.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
-            label1.Location = new System.Drawing.Point(12, 19);
+            label1.Location = new System.Drawing.Point(12, 67);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(312, 32);
+            label1.Size = new System.Drawing.Size(204, 21);
             label1.TabIndex = 45;
             label1.Text = "Student Infromation System";
             // 
@@ -773,9 +786,9 @@
             // 
             roundedPanel7.BackColor = System.Drawing.Color.FromArgb(15, 42, 74);
             roundedPanel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            roundedPanel7.Location = new System.Drawing.Point(0, 836);
+            roundedPanel7.Location = new System.Drawing.Point(0, 804);
             roundedPanel7.Name = "roundedPanel7";
-            roundedPanel7.Size = new System.Drawing.Size(1184, 25);
+            roundedPanel7.Size = new System.Drawing.Size(1184, 57);
             roundedPanel7.TabIndex = 46;
             // 
             // Dashboard
@@ -842,5 +855,6 @@
         private Resources.Components.RoundedPanel roundedPanel7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }

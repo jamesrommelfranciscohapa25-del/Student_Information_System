@@ -33,54 +33,144 @@ namespace Student_Information_System.Forms.Auth
         /// </summary>
         private void InitializeComponent()
         {
-            poisonPanel3 = new PoisonPanel();
-            poisonPanel4 = new PoisonPanel();
+            roundedPanel1 = new Resources.Components.RoundedPanel();
+            label3 = new System.Windows.Forms.Label();
+            passwordInput = new CyberTextBox();
+            label2 = new System.Windows.Forms.Label();
+            usernameIput = new CyberTextBox();
+            label1 = new System.Windows.Forms.Label();
+            label12 = new System.Windows.Forms.Label();
             BtnLogin = new CyberButton();
-            poisonPanel7 = new PoisonPanel();
-            passwordInput = new DreamTextBox();
-            poisonPanel6 = new PoisonPanel();
-            usernameIput = new DreamTextBox();
-            poisonPanel5 = new PoisonPanel();
-            bigLabel1 = new BigLabel();
-            poisonPanel4.SuspendLayout();
-            poisonPanel7.SuspendLayout();
-            poisonPanel6.SuspendLayout();
-            poisonPanel5.SuspendLayout();
-            this.SuspendLayout();
+            roundedPanel1.SuspendLayout();
+            SuspendLayout();
             // 
-            // poisonPanel3
+            // roundedPanel1
             // 
-            poisonPanel3.BackColor = System.Drawing.SystemColors.Info;
-            poisonPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            poisonPanel3.Dock = System.Windows.Forms.DockStyle.Left;
-            poisonPanel3.HorizontalScrollbarBarColor = true;
-            poisonPanel3.HorizontalScrollbarHighlightOnWheel = false;
-            poisonPanel3.HorizontalScrollbarSize = 10;
-            poisonPanel3.Location = new System.Drawing.Point(0, 0);
-            poisonPanel3.Name = "poisonPanel3";
-            poisonPanel3.Size = new System.Drawing.Size(552, 771);
-            poisonPanel3.TabIndex = 2;
-            poisonPanel3.VerticalScrollbarBarColor = true;
-            poisonPanel3.VerticalScrollbarHighlightOnWheel = false;
-            poisonPanel3.VerticalScrollbarSize = 10;
+            roundedPanel1.BackColor = System.Drawing.Color.White;
+            roundedPanel1.Controls.Add(label3);
+            roundedPanel1.Controls.Add(passwordInput);
+            roundedPanel1.Controls.Add(label2);
+            roundedPanel1.Controls.Add(usernameIput);
+            roundedPanel1.Controls.Add(label1);
+            roundedPanel1.Controls.Add(label12);
+            roundedPanel1.Controls.Add(BtnLogin);
+            roundedPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            roundedPanel1.Location = new System.Drawing.Point(350, 120);
+            roundedPanel1.Name = "roundedPanel1";
+            roundedPanel1.Size = new System.Drawing.Size(484, 621);
+            roundedPanel1.TabIndex = 7;
             // 
-            // poisonPanel4
+            // label3
             // 
-            poisonPanel4.Controls.Add(BtnLogin);
-            poisonPanel4.Controls.Add(poisonPanel7);
-            poisonPanel4.Controls.Add(poisonPanel6);
-            poisonPanel4.Controls.Add(poisonPanel5);
-            poisonPanel4.Dock = System.Windows.Forms.DockStyle.Right;
-            poisonPanel4.HorizontalScrollbarBarColor = true;
-            poisonPanel4.HorizontalScrollbarHighlightOnWheel = false;
-            poisonPanel4.HorizontalScrollbarSize = 10;
-            poisonPanel4.Location = new System.Drawing.Point(550, 0);
-            poisonPanel4.Name = "poisonPanel4";
-            poisonPanel4.Size = new System.Drawing.Size(514, 771);
-            poisonPanel4.TabIndex = 3;
-            poisonPanel4.VerticalScrollbarBarColor = true;
-            poisonPanel4.VerticalScrollbarHighlightOnWheel = false;
-            poisonPanel4.VerticalScrollbarSize = 10;
+            label3.AutoSize = true;
+            label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label3.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+            label3.Location = new System.Drawing.Point(59, 284);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(90, 15);
+            label3.TabIndex = 51;
+            label3.Text = "Enter Password:";
+            // 
+            // passwordInput
+            // 
+            passwordInput.Alpha = 20;
+            passwordInput.BackColor = System.Drawing.Color.Transparent;
+            passwordInput.Background_WidthPen = 1F;
+            passwordInput.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            passwordInput.BackgroundPen = true;
+            passwordInput.ColorBackground = System.Drawing.Color.White;
+            passwordInput.ColorBackground_Pen = System.Drawing.Color.FromArgb(29, 78, 216);
+            passwordInput.ColorLighting = System.Drawing.Color.FromArgb(29, 200, 238);
+            passwordInput.ColorPen_1 = System.Drawing.Color.FromArgb(29, 200, 238);
+            passwordInput.ColorPen_2 = System.Drawing.Color.FromArgb(37, 52, 68);
+            passwordInput.Cursor = System.Windows.Forms.Cursors.Hand;
+            passwordInput.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            passwordInput.Font = new System.Drawing.Font("Segoe UI", 8F);
+            passwordInput.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
+            passwordInput.Lighting = false;
+            passwordInput.LinearGradientPen = false;
+            passwordInput.Location = new System.Drawing.Point(59, 302);
+            passwordInput.Name = "passwordInput";
+            passwordInput.PenWidth = 15;
+            passwordInput.RGB = false;
+            passwordInput.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            passwordInput.Rounding = true;
+            passwordInput.RoundingInt = 30;
+            passwordInput.Size = new System.Drawing.Size(353, 34);
+            passwordInput.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            passwordInput.TabIndex = 50;
+            passwordInput.Tag = "Cyber";
+            passwordInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            passwordInput.TextButton = "";
+            passwordInput.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            passwordInput.Timer_RGB = 300;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label2.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+            label2.Location = new System.Drawing.Point(59, 201);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(93, 15);
+            label2.TabIndex = 49;
+            label2.Text = "Enter Username:";
+            // 
+            // usernameIput
+            // 
+            usernameIput.Alpha = 20;
+            usernameIput.BackColor = System.Drawing.Color.Transparent;
+            usernameIput.Background_WidthPen = 1F;
+            usernameIput.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            usernameIput.BackgroundPen = true;
+            usernameIput.ColorBackground = System.Drawing.Color.White;
+            usernameIput.ColorBackground_Pen = System.Drawing.Color.FromArgb(29, 78, 216);
+            usernameIput.ColorLighting = System.Drawing.Color.FromArgb(29, 200, 238);
+            usernameIput.ColorPen_1 = System.Drawing.Color.FromArgb(29, 200, 238);
+            usernameIput.ColorPen_2 = System.Drawing.Color.FromArgb(37, 52, 68);
+            usernameIput.Cursor = System.Windows.Forms.Cursors.Hand;
+            usernameIput.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            usernameIput.Font = new System.Drawing.Font("Segoe UI", 8F);
+            usernameIput.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
+            usernameIput.Lighting = false;
+            usernameIput.LinearGradientPen = false;
+            usernameIput.Location = new System.Drawing.Point(59, 219);
+            usernameIput.Name = "usernameIput";
+            usernameIput.PenWidth = 15;
+            usernameIput.RGB = false;
+            usernameIput.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            usernameIput.Rounding = true;
+            usernameIput.RoundingInt = 30;
+            usernameIput.Size = new System.Drawing.Size(353, 34);
+            usernameIput.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            usernameIput.TabIndex = 31;
+            usernameIput.Tag = "Cyber";
+            usernameIput.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            usernameIput.TextButton = "";
+            usernameIput.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            usernameIput.Timer_RGB = 300;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label1.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+            label1.Location = new System.Drawing.Point(59, 107);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(204, 21);
+            label1.TabIndex = 48;
+            label1.Text = "Student Infromation System";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label12.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+            label12.Location = new System.Drawing.Point(59, 75);
+            label12.Name = "label12";
+            label12.Size = new System.Drawing.Size(177, 32);
+            label12.TabIndex = 47;
+            label12.Text = "Bicol University";
             // 
             // BtnLogin
             // 
@@ -89,162 +179,64 @@ namespace Student_Information_System.Forms.Auth
             BtnLogin.Background = true;
             BtnLogin.Background_WidthPen = 0F;
             BtnLogin.BackgroundPen = true;
-            BtnLogin.ColorBackground = System.Drawing.Color.DimGray;
-            BtnLogin.ColorBackground_1 = System.Drawing.Color.White;
-            BtnLogin.ColorBackground_2 = System.Drawing.Color.White;
-            BtnLogin.ColorBackground_Pen = System.Drawing.Color.White;
-            BtnLogin.ColorLighting = System.Drawing.Color.White;
-            BtnLogin.ColorPen_1 = System.Drawing.Color.White;
-            BtnLogin.ColorPen_2 = System.Drawing.Color.White;
+            BtnLogin.ColorBackground = System.Drawing.Color.FromArgb(249, 115, 22);
+            BtnLogin.ColorBackground_1 = System.Drawing.Color.FromArgb(37, 52, 68);
+            BtnLogin.ColorBackground_2 = System.Drawing.Color.FromArgb(41, 63, 86);
+            BtnLogin.ColorBackground_Pen = System.Drawing.Color.FromArgb(29, 78, 216);
+            BtnLogin.ColorLighting = System.Drawing.Color.FromArgb(29, 200, 238);
+            BtnLogin.ColorPen_1 = System.Drawing.Color.FromArgb(37, 52, 68);
+            BtnLogin.ColorPen_2 = System.Drawing.Color.FromArgb(41, 63, 86);
             BtnLogin.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
             BtnLogin.Effect_1 = true;
-            BtnLogin.Effect_1_ColorBackground = System.Drawing.Color.White;
+            BtnLogin.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(29, 200, 238);
             BtnLogin.Effect_1_Transparency = 25;
             BtnLogin.Effect_2 = true;
             BtnLogin.Effect_2_ColorBackground = System.Drawing.Color.White;
             BtnLogin.Effect_2_Transparency = 20;
-            BtnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            BtnLogin.ForeColor = System.Drawing.Color.White;
+            BtnLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            BtnLogin.ForeColor = System.Drawing.Color.FromArgb(245, 245, 245);
             BtnLogin.Lighting = false;
             BtnLogin.LinearGradient_Background = false;
             BtnLogin.LinearGradientPen = false;
-            BtnLogin.Location = new System.Drawing.Point(294, 468);
+            BtnLogin.Location = new System.Drawing.Point(287, 419);
             BtnLogin.Name = "BtnLogin";
             BtnLogin.PenWidth = 15;
             BtnLogin.Rounding = true;
             BtnLogin.RoundingInt = 70;
-            BtnLogin.Size = new System.Drawing.Size(130, 38);
+            BtnLogin.Size = new System.Drawing.Size(125, 34);
             BtnLogin.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            BtnLogin.TabIndex = 6;
-            BtnLogin.Tag = "Button";
+            BtnLogin.TabIndex = 33;
+            BtnLogin.Tag = "Fill";
             BtnLogin.TextButton = "Login";
             BtnLogin.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             BtnLogin.Timer_Effect_1 = 5;
             BtnLogin.Timer_RGB = 300;
             // 
-            // poisonPanel7
-            // 
-            poisonPanel7.Controls.Add(passwordInput);
-            poisonPanel7.Dock = System.Windows.Forms.DockStyle.Top;
-            poisonPanel7.HorizontalScrollbarBarColor = true;
-            poisonPanel7.HorizontalScrollbarHighlightOnWheel = false;
-            poisonPanel7.HorizontalScrollbarSize = 10;
-            poisonPanel7.Location = new System.Drawing.Point(0, 376);
-            poisonPanel7.Name = "poisonPanel7";
-            poisonPanel7.Size = new System.Drawing.Size(514, 76);
-            poisonPanel7.TabIndex = 5;
-            poisonPanel7.VerticalScrollbarBarColor = true;
-            poisonPanel7.VerticalScrollbarHighlightOnWheel = false;
-            poisonPanel7.VerticalScrollbarSize = 10;
-            // 
-            // passwordInput
-            // 
-            passwordInput.BackColor = System.Drawing.Color.White;
-            passwordInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            passwordInput.ColorA = System.Drawing.Color.FromArgb(31, 31, 31);
-            passwordInput.ColorB = System.Drawing.Color.FromArgb(41, 41, 41);
-            passwordInput.ColorC = System.Drawing.Color.FromArgb(51, 51, 51);
-            passwordInput.ColorD = System.Drawing.Color.FromArgb(0, 0, 0, 0);
-            passwordInput.ColorE = System.Drawing.Color.FromArgb(25, 255, 255, 255);
-            passwordInput.ColorF = System.Drawing.Color.Black;
-            passwordInput.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            passwordInput.ForeColor = System.Drawing.Color.Black;
-            passwordInput.Location = new System.Drawing.Point(71, 18);
-            passwordInput.Name = "passwordInput";
-            passwordInput.PlaceholderText = "  Enter Password";
-            passwordInput.Size = new System.Drawing.Size(353, 29);
-            passwordInput.TabIndex = 3;
-            // 
-            // poisonPanel6
-            // 
-            poisonPanel6.Controls.Add(usernameIput);
-            poisonPanel6.Dock = System.Windows.Forms.DockStyle.Top;
-            poisonPanel6.HorizontalScrollbarBarColor = true;
-            poisonPanel6.HorizontalScrollbarHighlightOnWheel = false;
-            poisonPanel6.HorizontalScrollbarSize = 10;
-            poisonPanel6.Location = new System.Drawing.Point(0, 305);
-            poisonPanel6.Name = "poisonPanel6";
-            poisonPanel6.Size = new System.Drawing.Size(514, 71);
-            poisonPanel6.TabIndex = 4;
-            poisonPanel6.VerticalScrollbarBarColor = true;
-            poisonPanel6.VerticalScrollbarHighlightOnWheel = false;
-            poisonPanel6.VerticalScrollbarSize = 10;
-            // 
-            // usernameIput
-            // 
-            usernameIput.BackColor = System.Drawing.Color.White;
-            usernameIput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            usernameIput.ColorA = System.Drawing.Color.FromArgb(31, 31, 31);
-            usernameIput.ColorB = System.Drawing.Color.FromArgb(41, 41, 41);
-            usernameIput.ColorC = System.Drawing.Color.FromArgb(51, 51, 51);
-            usernameIput.ColorD = System.Drawing.Color.FromArgb(0, 0, 0, 0);
-            usernameIput.ColorE = System.Drawing.Color.FromArgb(25, 255, 255, 255);
-            usernameIput.ColorF = System.Drawing.Color.Black;
-            usernameIput.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            usernameIput.ForeColor = System.Drawing.Color.Black;
-            usernameIput.Location = new System.Drawing.Point(71, 18);
-            usernameIput.Name = "usernameIput";
-            usernameIput.PlaceholderText = "  Enter Username";
-            usernameIput.Size = new System.Drawing.Size(353, 29);
-            usernameIput.TabIndex = 2;
-            // 
-            // poisonPanel5
-            // 
-            poisonPanel5.Controls.Add(bigLabel1);
-            poisonPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            poisonPanel5.HorizontalScrollbarBarColor = true;
-            poisonPanel5.HorizontalScrollbarHighlightOnWheel = false;
-            poisonPanel5.HorizontalScrollbarSize = 10;
-            poisonPanel5.Location = new System.Drawing.Point(0, 0);
-            poisonPanel5.Name = "poisonPanel5";
-            poisonPanel5.Size = new System.Drawing.Size(514, 305);
-            poisonPanel5.TabIndex = 3;
-            poisonPanel5.VerticalScrollbarBarColor = true;
-            poisonPanel5.VerticalScrollbarHighlightOnWheel = false;
-            poisonPanel5.VerticalScrollbarSize = 10;
-            // 
-            // bigLabel1
-            // 
-            bigLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            bigLabel1.AutoSize = true;
-            bigLabel1.BackColor = System.Drawing.Color.Transparent;
-            bigLabel1.Font = new System.Drawing.Font("Segoe UI Black", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            bigLabel1.ForeColor = System.Drawing.Color.Black;
-            bigLabel1.Location = new System.Drawing.Point(183, 245);
-            bigLabel1.Name = "bigLabel1";
-            bigLabel1.Size = new System.Drawing.Size(126, 45);
-            bigLabel1.TabIndex = 2;
-            bigLabel1.Text = "LOGIN";
-            // 
             // Login
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1064, 771);
-            Controls.Add(poisonPanel4);
-            Controls.Add(poisonPanel3);
+            BackColor = System.Drawing.Color.FromArgb(244, 247, 251);
+            ClientSize = new System.Drawing.Size(1184, 861);
+            Controls.Add(roundedPanel1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             Name = "Login";
+            Padding = new System.Windows.Forms.Padding(350, 120, 350, 120);
+            RightToLeftLayout = true;
             Text = "Login";
-            poisonPanel4.ResumeLayout(false);
-            poisonPanel7.ResumeLayout(false);
-            poisonPanel7.PerformLayout();
-            poisonPanel6.ResumeLayout(false);
-            poisonPanel6.PerformLayout();
-            poisonPanel5.ResumeLayout(false);
-            poisonPanel5.PerformLayout();
+            roundedPanel1.ResumeLayout(false);
+            roundedPanel1.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-        private ReaLTaiizor.Controls.PoisonPanel poisonPanel3;
-        private ReaLTaiizor.Controls.PoisonPanel poisonPanel4;
-        private BigLabel bigLabel1;
-        private PoisonPanel poisonPanel7;
-        private PoisonPanel poisonPanel5;
-        private DreamTextBox usernameIput;
-        private DreamTextBox passwordInput;
-        private PoisonPanel poisonPanel6;
+        private Resources.Components.RoundedPanel roundedPanel1;
         private CyberButton BtnLogin;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private CyberTextBox passwordInput;
+        private System.Windows.Forms.Label label2;
+        private CyberTextBox usernameIput;
     }
 }
