@@ -68,7 +68,7 @@ namespace Student_Information_System.Forms.Auth
             picLogo.BackColor = System.Drawing.Color.Transparent;
             picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             picLogo.Image = Properties.Resources._10_150x150;
-            picLogo.Location = new System.Drawing.Point(182, 20);
+            picLogo.Location = new System.Drawing.Point(189, 28);
             picLogo.Name = "picLogo";
             picLogo.Size = new System.Drawing.Size(128, 128);
             picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -101,7 +101,7 @@ namespace Student_Information_System.Forms.Auth
             BtnLogin.Lighting = false;
             BtnLogin.LinearGradient_Background = false;
             BtnLogin.LinearGradientPen = false;
-            BtnLogin.Location = new System.Drawing.Point(58, 411);
+            BtnLogin.Location = new System.Drawing.Point(64, 504);
             BtnLogin.Name = "BtnLogin";
             BtnLogin.PenWidth = 15;
             BtnLogin.Rounding = true;
@@ -120,7 +120,7 @@ namespace Student_Information_System.Forms.Auth
             label3.AutoSize = true;
             label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label3.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
-            label3.Location = new System.Drawing.Point(58, 293);
+            label3.Location = new System.Drawing.Point(64, 337);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(90, 15);
             label3.TabIndex = 51;
@@ -144,7 +144,7 @@ namespace Student_Information_System.Forms.Auth
             passwordInput.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
             passwordInput.Lighting = false;
             passwordInput.LinearGradientPen = false;
-            passwordInput.Location = new System.Drawing.Point(58, 311);
+            passwordInput.Location = new System.Drawing.Point(64, 355);
             passwordInput.Name = "passwordInput";
             passwordInput.PenWidth = 15;
             passwordInput.RGB = false;
@@ -165,7 +165,7 @@ namespace Student_Information_System.Forms.Auth
             label2.AutoSize = true;
             label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label2.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
-            label2.Location = new System.Drawing.Point(58, 223);
+            label2.Location = new System.Drawing.Point(64, 267);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(93, 15);
             label2.TabIndex = 49;
@@ -189,7 +189,7 @@ namespace Student_Information_System.Forms.Auth
             usernameInput.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
             usernameInput.Lighting = false;
             usernameInput.LinearGradientPen = false;
-            usernameInput.Location = new System.Drawing.Point(58, 241);
+            usernameInput.Location = new System.Drawing.Point(64, 285);
             usernameInput.Name = "usernameInput";
             usernameInput.PenWidth = 15;
             usernameInput.RGB = false;
@@ -210,7 +210,7 @@ namespace Student_Information_System.Forms.Auth
             Subtitle.AutoSize = true;
             Subtitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             Subtitle.ForeColor = System.Drawing.Color.FromArgb(15, 42, 74);
-            Subtitle.Location = new System.Drawing.Point(147, 183);
+            Subtitle.Location = new System.Drawing.Point(154, 191);
             Subtitle.Name = "Subtitle";
             Subtitle.Size = new System.Drawing.Size(204, 21);
             Subtitle.TabIndex = 48;
@@ -222,7 +222,7 @@ namespace Student_Information_System.Forms.Auth
             Title.AutoSize = true;
             Title.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             Title.ForeColor = System.Drawing.Color.FromArgb(15, 42, 74);
-            Title.Location = new System.Drawing.Point(136, 151);
+            Title.Location = new System.Drawing.Point(143, 159);
             Title.Name = "Title";
             Title.Size = new System.Drawing.Size(225, 32);
             Title.TabIndex = 47;
