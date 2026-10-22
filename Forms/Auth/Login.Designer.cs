@@ -65,7 +65,7 @@ namespace Student_Information_System.Forms.Auth
             label3.AutoSize = true;
             label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label3.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
-            label3.Location = new System.Drawing.Point(59, 284);
+            label3.Location = new System.Drawing.Point(58, 306);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(90, 15);
             label3.TabIndex = 51;
@@ -89,7 +89,7 @@ namespace Student_Information_System.Forms.Auth
             passwordInput.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
             passwordInput.Lighting = false;
             passwordInput.LinearGradientPen = false;
-            passwordInput.Location = new System.Drawing.Point(59, 302);
+            passwordInput.Location = new System.Drawing.Point(58, 324);
             passwordInput.Name = "passwordInput";
             passwordInput.PenWidth = 15;
             passwordInput.RGB = false;
@@ -110,7 +110,7 @@ namespace Student_Information_System.Forms.Auth
             label2.AutoSize = true;
             label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label2.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
-            label2.Location = new System.Drawing.Point(59, 201);
+            label2.Location = new System.Drawing.Point(58, 223);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(93, 15);
             label2.TabIndex = 49;
@@ -134,7 +134,7 @@ namespace Student_Information_System.Forms.Auth
             usernameIput.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
             usernameIput.Lighting = false;
             usernameIput.LinearGradientPen = false;
-            usernameIput.Location = new System.Drawing.Point(59, 219);
+            usernameIput.Location = new System.Drawing.Point(58, 241);
             usernameIput.Name = "usernameIput";
             usernameIput.PenWidth = 15;
             usernameIput.RGB = false;
@@ -155,7 +155,7 @@ namespace Student_Information_System.Forms.Auth
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label1.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
-            label1.Location = new System.Drawing.Point(59, 107);
+            label1.Location = new System.Drawing.Point(58, 176);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(204, 21);
             label1.TabIndex = 48;
@@ -166,7 +166,7 @@ namespace Student_Information_System.Forms.Auth
             label12.AutoSize = true;
             label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label12.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
-            label12.Location = new System.Drawing.Point(59, 75);
+            label12.Location = new System.Drawing.Point(58, 144);
             label12.Name = "label12";
             label12.Size = new System.Drawing.Size(177, 32);
             label12.TabIndex = 47;
@@ -198,7 +198,7 @@ namespace Student_Information_System.Forms.Auth
             BtnLogin.Lighting = false;
             BtnLogin.LinearGradient_Background = false;
             BtnLogin.LinearGradientPen = false;
-            BtnLogin.Location = new System.Drawing.Point(287, 419);
+            BtnLogin.Location = new System.Drawing.Point(286, 397);
             BtnLogin.Name = "BtnLogin";
             BtnLogin.PenWidth = 15;
             BtnLogin.Rounding = true;

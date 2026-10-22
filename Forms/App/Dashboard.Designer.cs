@@ -292,7 +292,7 @@
             InputProgram.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
             InputProgram.FormattingEnabled = true;
             InputProgram.ItemHeight = 28;
-            InputProgram.Items.AddRange(new object[] { "BS COMPUTER SCIENCE", "BS BIOLOGY", "BS METEOROLOGY", "BS CHEMISTRYBS INFORMATION TECHNOLOGY", "BS INFORMATION TECHNOLOGY" });
+            InputProgram.Items.AddRange(new object[] { "BS COMPUTER SCIENCE", "BS BIOLOGY", "BS METEOROLOGY", "BS CHEMISTRY", "BS INFORMATION TECHNOLOGY" });
             InputProgram.Location = new System.Drawing.Point(14, 247);
             InputProgram.Name = "InputProgram";
             InputProgram.RGB = false;
@@ -451,9 +451,9 @@
             label8.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
             label8.Location = new System.Drawing.Point(26, 38);
             label8.Name = "label8";
-            label8.Size = new System.Drawing.Size(124, 15);
+            label8.Size = new System.Drawing.Size(62, 15);
             label8.TabIndex = 41;
-            label8.Text = "Search Student Name:";
+            label8.Text = "Searchbar:";
             // 
             // searchBar
             // 
@@ -767,9 +767,9 @@
             label12.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
             label12.Location = new System.Drawing.Point(12, 35);
             label12.Name = "label12";
-            label12.Size = new System.Drawing.Size(177, 32);
+            label12.Size = new System.Drawing.Size(249, 32);
             label12.TabIndex = 46;
-            label12.Text = "Bicol University";
+            label12.Text = "BU College of Science";
             // 
             // label1
             // 
