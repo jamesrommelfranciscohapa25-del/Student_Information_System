@@ -47,13 +47,13 @@ namespace Student_Information_System.Forms.Auth
             // roundedPanel1
             // 
             roundedPanel1.BackColor = System.Drawing.Color.White;
+            roundedPanel1.Controls.Add(BtnLogin);
             roundedPanel1.Controls.Add(label3);
             roundedPanel1.Controls.Add(passwordInput);
             roundedPanel1.Controls.Add(label2);
             roundedPanel1.Controls.Add(usernameIput);
             roundedPanel1.Controls.Add(label1);
             roundedPanel1.Controls.Add(label12);
-            roundedPanel1.Controls.Add(BtnLogin);
             roundedPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             roundedPanel1.Location = new System.Drawing.Point(350, 120);
             roundedPanel1.Name = "roundedPanel1";
@@ -198,14 +198,14 @@ namespace Student_Information_System.Forms.Auth
             BtnLogin.Lighting = false;
             BtnLogin.LinearGradient_Background = false;
             BtnLogin.LinearGradientPen = false;
-            BtnLogin.Location = new System.Drawing.Point(286, 397);
+            BtnLogin.Location = new System.Drawing.Point(172, 395);
             BtnLogin.Name = "BtnLogin";
             BtnLogin.PenWidth = 15;
             BtnLogin.Rounding = true;
             BtnLogin.RoundingInt = 70;
             BtnLogin.Size = new System.Drawing.Size(125, 34);
             BtnLogin.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            BtnLogin.TabIndex = 33;
+            BtnLogin.TabIndex = 52;
             BtnLogin.Tag = "Fill";
             BtnLogin.TextButton = "Login";
             BtnLogin.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
@@ -231,12 +231,12 @@ namespace Student_Information_System.Forms.Auth
 
         #endregion
         private Resources.Components.RoundedPanel roundedPanel1;
-        private CyberButton BtnLogin;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private CyberTextBox passwordInput;
         private System.Windows.Forms.Label label2;
         private CyberTextBox usernameIput;
+        private CyberButton BtnLogin;
     }
 }
