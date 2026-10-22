@@ -403,7 +403,7 @@
             TestButton.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             TestButton.TabIndex = 30;
             TestButton.Tag = "Cyber";
-            TestButton.TextButton = "Change Photo";
+            TestButton.TextButton = "Upload Photo";
             TestButton.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             TestButton.Timer_Effect_1 = 5;
             TestButton.Timer_RGB = 300;
