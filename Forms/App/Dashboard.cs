@@ -85,6 +85,8 @@ namespace Student_Information_System.Forms.App
             combo.SelectedIndex = 0;
         }
 
+        // ---------- Reading / writing Cyber controls ----------
+
         private static string GetValue(Control c)
         {
             if (c is ComboBox cb)
@@ -110,12 +112,64 @@ namespace Student_Information_System.Forms.App
             c.Update();
         }
 
+        private static System.Windows.Forms.TextBox FindTextBox(Control parent)
+        {
+            foreach (Control c in parent.Controls)
+            {
+                if (c is System.Windows.Forms.TextBox tb) return tb;
+                System.Windows.Forms.TextBox nested = FindTextBox(c);
+                if (nested != null) return nested;
+            }
+            return null;
+        }
+
+        // ---------- Validation helpers ----------
+
+        private static bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email)) return false;
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email && email.Contains(".");
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        // Converts +63xxxxxxxxxx / 63xxxxxxxxxx / 9xxxxxxxxx to 09xxxxxxxxx.
+        // Returns null if it isn't a valid PH mobile number.
+        private static string NormalizePhoneNumber(string input)
+        {
+            if (string.IsNullOrWhiteSpace(input)) return null;
+
+            string digits = new string(input.Where(char.IsDigit).ToArray());
+
+            if (input.Trim().StartsWith("+63") || (digits.StartsWith("63") && digits.Length == 12))
+                digits = "0" + digits.Substring(2);
+            else if (digits.Length == 10 && digits.StartsWith("9"))
+                digits = "0" + digits;
+
+            return (digits.Length == 11 && digits.StartsWith("09")) ? digits : null;
+        }
+
+        private static bool IsValidYearLevel(string value)
+        {
+            return int.TryParse(value, out int y) && y >= 1 && y <= 5;
+        }
+
+        // ---------- Form actions ----------
+
         private void ClearForm()
         {
             SetText(InputStudentID, string.Empty);
-            SetText(InputFullName, string.Empty);
+            SetText(InputFirstName, string.Empty);
+            SetText(InputLastName, string.Empty);
             SetText(InputYearLevel, string.Empty);
             SetText(InputContactNumber, string.Empty);
+            SetText(InputEmailAccount, string.Empty);
 
             InputGender.SelectedIndex = -1;
             InputGender.Text = string.Empty;
@@ -139,11 +193,14 @@ namespace Student_Information_System.Forms.App
 
                     string query =
                         "SELECT stud_id AS 'Student ID', " +
-                        "stud_full_name AS 'Full Name', " +
+                        "stud_first_name AS 'First Name', " +
+                        "stud_last_name AS 'Last Name', " +
                         "stud_gender AS 'Gender', " +
                         "stud_year_level AS 'Year Level', " +
                         "stud_program AS 'Program', " +
-                        "stud_contact_number AS 'Contact Number' FROM stud_data ORDER BY stud_id ASC";
+                        "stud_contact_number AS 'Contact Number', " +
+                        "stud_email AS 'Email' " +
+                        "FROM stud_data ORDER BY stud_id ASC";
 
                     using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection))
                     {
@@ -179,11 +236,17 @@ namespace Student_Information_System.Forms.App
             if (sortYearLevel.SelectedIndex > 0 && !string.IsNullOrEmpty(year))
                 filters.Add("Convert([Year Level], 'System.String') = '" + year.Replace("'", "''") + "'");
 
+            // search matches first name, last name, "first last", student ID or email
             string search = GetValue(searchBar);
             if (!string.IsNullOrEmpty(search))
             {
                 string s = EscapeLike(search);
-                filters.Add("([Full Name] LIKE '%" + s + "%' OR [Student ID] LIKE '%" + s + "%')");
+                filters.Add("(" +
+                    "[First Name] LIKE '%" + s + "%' OR " +
+                    "[Last Name] LIKE '%" + s + "%' OR " +
+                    "([First Name] + ' ' + [Last Name]) LIKE '%" + s + "%' OR " +
+                    "[Student ID] LIKE '%" + s + "%' OR " +
+                    "[Email] LIKE '%" + s + "%')");
             }
 
             DataView view = _studentTable.DefaultView;
@@ -209,17 +272,6 @@ namespace Student_Information_System.Forms.App
 
             inner.TextChanged -= SortChanged;
             inner.TextChanged += SortChanged;
-        }
-
-        private static System.Windows.Forms.TextBox FindTextBox(Control parent)
-        {
-            foreach (Control c in parent.Controls)
-            {
-                if (c is System.Windows.Forms.TextBox tb) return tb;
-                System.Windows.Forms.TextBox nested = FindTextBox(c);
-                if (nested != null) return nested;
-            }
-            return null;
         }
 
         private static string EscapeLike(string value)
@@ -277,25 +329,64 @@ namespace Student_Information_System.Forms.App
             g.DefaultCellStyle.SelectionBackColor = selection;
             g.DefaultCellStyle.SelectionForeColor = text;
             g.AlternatingRowsDefaultCellStyle.BackColor = altRow;
+
+            // relative column widths (8 columns need to share the space sensibly)
+            SetColumnWeight("Student ID", 95);
+            SetColumnWeight("First Name", 100);
+            SetColumnWeight("Last Name", 90);
+            SetColumnWeight("Gender", 65);
+            SetColumnWeight("Year Level", 55);
+            SetColumnWeight("Program", 130);
+            SetColumnWeight("Contact Number", 100);
+            SetColumnWeight("Email", 150);
+        }
+
+        private void SetColumnWeight(string columnName, float weight)
+        {
+            DataGridViewColumn col = dataGridView1.Columns[columnName];
+            if (col != null) col.FillWeight = weight;
         }
 
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
             string id = GetValue(InputStudentID);
-            string name = GetValue(InputFullName);
+            string firstName = GetValue(InputFirstName);
+            string lastName = GetValue(InputLastName);
             string gender = GetValue(InputGender);
             string yearLevel = GetValue(InputYearLevel);
             string program = GetValue(InputProgram);
             string contact = GetValue(InputContactNumber);
+            string email = GetValue(InputEmailAccount);
 
             if (string.IsNullOrWhiteSpace(id) ||
-                string.IsNullOrWhiteSpace(name) ||
+                string.IsNullOrWhiteSpace(firstName) ||
+                string.IsNullOrWhiteSpace(lastName) ||
                 string.IsNullOrWhiteSpace(gender) ||
                 string.IsNullOrWhiteSpace(yearLevel) ||
                 string.IsNullOrWhiteSpace(program) ||
-                string.IsNullOrWhiteSpace(contact))
+                string.IsNullOrWhiteSpace(contact) ||
+                string.IsNullOrWhiteSpace(email))
             {
                 MessageBox.Show("Please fill in all fields.");
+                return;
+            }
+
+            if (!IsValidYearLevel(yearLevel))
+            {
+                MessageBox.Show("Year Level must be a number from 1 to 5.");
+                return;
+            }
+
+            contact = NormalizePhoneNumber(contact);
+            if (contact == null)
+            {
+                MessageBox.Show("Please enter a valid mobile number (e.g. 09123456789 or +639123456789).");
+                return;
+            }
+
+            if (!IsValidEmail(email))
+            {
+                MessageBox.Show("Please enter a valid email address (for example name@bicol-u.edu.ph).");
                 return;
             }
 
@@ -321,17 +412,19 @@ namespace Student_Information_System.Forms.App
                     }
 
                     string insertQuery = "INSERT INTO stud_data " +
-                    "(stud_id, stud_full_name, stud_gender, stud_year_level, stud_program, stud_contact_number, stud_photo) " +
-                    "VALUES (@id, @name, @gender, @yearLevel, @program, @contactNumber, @photo)";
+                    "(stud_id, stud_first_name, stud_last_name, stud_gender, stud_year_level, stud_program, stud_contact_number, stud_email, stud_photo) " +
+                    "VALUES (@id, @firstName, @lastName, @gender, @yearLevel, @program, @contactNumber, @email, @photo)";
 
                     using (MySqlCommand cmd = new MySqlCommand(insertQuery, conn))
                     {
                         cmd.Parameters.AddWithValue("@id", id);
-                        cmd.Parameters.AddWithValue("@name", name);
+                        cmd.Parameters.AddWithValue("@firstName", firstName);
+                        cmd.Parameters.AddWithValue("@lastName", lastName);
                         cmd.Parameters.AddWithValue("@gender", gender);
                         cmd.Parameters.AddWithValue("@yearLevel", yearLevel);
                         cmd.Parameters.AddWithValue("@program", program);
                         cmd.Parameters.AddWithValue("@contactNumber", contact);
+                        cmd.Parameters.AddWithValue("@email", email);
                         cmd.Parameters.Add("@photo", MySqlDbType.MediumBlob).Value = (object)_photoBytes ?? DBNull.Value;
 
                         cmd.ExecuteNonQuery();
@@ -341,6 +434,10 @@ namespace Student_Information_System.Forms.App
                 MessageBox.Show("Student registered successfully!");
                 LoadStudentRecords();
                 ClearForm();
+            }
+            catch (MySqlException ex) when (ex.Number == 1062)
+            {
+                MessageBox.Show("That email address is already used by another student.");
             }
             catch (MySqlException ex)
             {
@@ -355,11 +452,13 @@ namespace Student_Information_System.Forms.App
         private void ButtonEdit_Click(object sender, EventArgs e)
         {
             string id = GetValue(InputStudentID);
-            string name = GetValue(InputFullName);
+            string firstName = GetValue(InputFirstName);
+            string lastName = GetValue(InputLastName);
             string gender = GetValue(InputGender);
             string yearLevel = GetValue(InputYearLevel);
             string program = GetValue(InputProgram);
             string contact = GetValue(InputContactNumber);
+            string email = GetValue(InputEmailAccount);
 
             if (string.IsNullOrWhiteSpace(id))
             {
@@ -367,13 +466,34 @@ namespace Student_Information_System.Forms.App
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(name) ||
+            if (string.IsNullOrWhiteSpace(firstName) ||
+                string.IsNullOrWhiteSpace(lastName) ||
                 string.IsNullOrWhiteSpace(gender) ||
                 string.IsNullOrWhiteSpace(yearLevel) ||
                 string.IsNullOrWhiteSpace(program) ||
-                string.IsNullOrWhiteSpace(contact))
+                string.IsNullOrWhiteSpace(contact) ||
+                string.IsNullOrWhiteSpace(email))
             {
                 MessageBox.Show("Please fill in all fields.");
+                return;
+            }
+
+            if (!IsValidYearLevel(yearLevel))
+            {
+                MessageBox.Show("Year Level must be a number from 1 to 5.");
+                return;
+            }
+
+            contact = NormalizePhoneNumber(contact);
+            if (contact == null)
+            {
+                MessageBox.Show("Please enter a valid mobile number (e.g. 09123456789 or +639123456789).");
+                return;
+            }
+
+            if (!IsValidEmail(email))
+            {
+                MessageBox.Show("Please enter a valid email address (for example name@bicol-u.edu.ph).");
                 return;
             }
 
@@ -384,22 +504,26 @@ namespace Student_Information_System.Forms.App
                     conn.Open();
 
                     string updateQuery = "UPDATE stud_data SET " +
-                        "stud_full_name = @name, " +
+                        "stud_first_name = @firstName, " +
+                        "stud_last_name = @lastName, " +
                         "stud_gender = @gender, " +
                         "stud_year_level = @yearLevel, " +
                         "stud_program = @program, " +
                         "stud_contact_number = @contactNumber, " +
+                        "stud_email = @email, " +
                         "stud_photo = @photo " +
                         "WHERE stud_id = @id";
 
                     using (MySqlCommand cmd = new MySqlCommand(updateQuery, conn))
                     {
                         cmd.Parameters.AddWithValue("@id", id);
-                        cmd.Parameters.AddWithValue("@name", name);
+                        cmd.Parameters.AddWithValue("@firstName", firstName);
+                        cmd.Parameters.AddWithValue("@lastName", lastName);
                         cmd.Parameters.AddWithValue("@gender", gender);
                         cmd.Parameters.AddWithValue("@yearLevel", yearLevel);
                         cmd.Parameters.AddWithValue("@program", program);
                         cmd.Parameters.AddWithValue("@contactNumber", contact);
+                        cmd.Parameters.AddWithValue("@email", email);
                         cmd.Parameters.Add("@photo", MySqlDbType.MediumBlob).Value = (object)_photoBytes ?? DBNull.Value;
 
                         int rowsAffected = cmd.ExecuteNonQuery();
@@ -416,6 +540,10 @@ namespace Student_Information_System.Forms.App
                         }
                     }
                 }
+            }
+            catch (MySqlException ex) when (ex.Number == 1062)
+            {
+                MessageBox.Show("That email address is already used by another student.");
             }
             catch (MySqlException ex)
             {
@@ -500,9 +628,11 @@ namespace Student_Information_System.Forms.App
                 string studentId = Convert.ToString(row.Cells["Student ID"].Value);
 
                 SetText(InputStudentID, studentId);
-                SetText(InputFullName, Convert.ToString(row.Cells["Full Name"].Value));
+                SetText(InputFirstName, Convert.ToString(row.Cells["First Name"].Value));
+                SetText(InputLastName, Convert.ToString(row.Cells["Last Name"].Value));
                 SetText(InputYearLevel, Convert.ToString(row.Cells["Year Level"].Value));
                 SetText(InputContactNumber, Convert.ToString(row.Cells["Contact Number"].Value));
+                SetText(InputEmailAccount, Convert.ToString(row.Cells["Email"].Value));
 
                 string gender = Convert.ToString(row.Cells["Gender"].Value);
                 string program = Convert.ToString(row.Cells["Program"].Value);
@@ -598,7 +728,6 @@ namespace Student_Information_System.Forms.App
         }
 
         private void InputStudentID_TextChanged(object sender, EventArgs e) { }
-        private void InputFullName_TextChanged(object sender, EventArgs e) { }
         private void InputGender_TextChanged(object sender, EventArgs e) { }
         private void InputYearLevel_TextChanged(object sender, EventArgs e) { }
         private void InputProgram_TextChanged(object sender, EventArgs e) { }
