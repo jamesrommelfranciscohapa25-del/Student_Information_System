@@ -7,10 +7,10 @@ namespace Student_Information_System.Database
     {
         private static readonly string connectionString =
             "server=127.0.0.1;" +
-            "port=3307;" +
+            "port=3306;" +
             "database=login_db;" +
             "uid=root;" +
-            "pwd=Je197@du;" +
+            "pwd=powerRangers;" +
             "charset=utf8mb4;";
 
         public static MySqlConnection GetConnection()

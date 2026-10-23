@@ -40,7 +40,6 @@
             InputLastName = new ReaLTaiizor.Controls.CyberTextBox();
             ButtonAdd = new ReaLTaiizor.Controls.CyberButton();
             InputContactNumber = new ReaLTaiizor.Controls.CyberTextBox();
-            InputYearLevel = new ReaLTaiizor.Controls.CyberTextBox();
             InputFirstName = new ReaLTaiizor.Controls.CyberTextBox();
             InputStudentID = new ReaLTaiizor.Controls.CyberTextBox();
             label7 = new System.Windows.Forms.Label();
@@ -68,6 +67,7 @@
             label12 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             roundedPanel7 = new Resources.Components.RoundedPanel();
+            InputYearLevel = new ReaLTaiizor.Controls.CyberComboBox();
             roundedPanel1.SuspendLayout();
             roundedPanel4.SuspendLayout();
             roundedPanel3.SuspendLayout();
@@ -108,6 +108,7 @@
             // 
             roundedPanel4.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             roundedPanel4.BackColor = System.Drawing.Color.White;
+            roundedPanel4.Controls.Add(InputYearLevel);
             roundedPanel4.Controls.Add(InputEmailAccount);
             roundedPanel4.Controls.Add(label14);
             roundedPanel4.Controls.Add(ButtonDelete);
@@ -117,7 +118,6 @@
             roundedPanel4.Controls.Add(InputLastName);
             roundedPanel4.Controls.Add(ButtonAdd);
             roundedPanel4.Controls.Add(InputContactNumber);
-            roundedPanel4.Controls.Add(InputYearLevel);
             roundedPanel4.Controls.Add(InputFirstName);
             roundedPanel4.Controls.Add(InputStudentID);
             roundedPanel4.Controls.Add(label7);
@@ -421,41 +421,6 @@
             InputContactNumber.TextButton = "";
             InputContactNumber.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             InputContactNumber.Timer_RGB = 300;
-            // 
-            // InputYearLevel
-            // 
-            InputYearLevel.Alpha = 20;
-            InputYearLevel.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            InputYearLevel.BackColor = System.Drawing.Color.Transparent;
-            InputYearLevel.Background_WidthPen = 1F;
-            InputYearLevel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            InputYearLevel.BackgroundPen = true;
-            InputYearLevel.ColorBackground = System.Drawing.Color.White;
-            InputYearLevel.ColorBackground_Pen = System.Drawing.Color.FromArgb(29, 78, 216);
-            InputYearLevel.ColorLighting = System.Drawing.Color.FromArgb(29, 200, 238);
-            InputYearLevel.ColorPen_1 = System.Drawing.Color.FromArgb(29, 200, 238);
-            InputYearLevel.ColorPen_2 = System.Drawing.Color.FromArgb(37, 52, 68);
-            InputYearLevel.Cursor = System.Windows.Forms.Cursors.Hand;
-            InputYearLevel.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            InputYearLevel.Font = new System.Drawing.Font("Segoe UI", 8F);
-            InputYearLevel.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
-            InputYearLevel.Lighting = false;
-            InputYearLevel.LinearGradientPen = false;
-            InputYearLevel.Location = new System.Drawing.Point(14, 247);
-            InputYearLevel.Name = "InputYearLevel";
-            InputYearLevel.PenWidth = 15;
-            InputYearLevel.RGB = false;
-            InputYearLevel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            InputYearLevel.Rounding = true;
-            InputYearLevel.RoundingInt = 30;
-            InputYearLevel.Size = new System.Drawing.Size(226, 34);
-            InputYearLevel.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            InputYearLevel.TabIndex = 36;
-            InputYearLevel.Tag = "Cyber";
-            InputYearLevel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            InputYearLevel.TextButton = "";
-            InputYearLevel.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            InputYearLevel.Timer_RGB = 300;
             // 
             // InputFirstName
             // 
@@ -916,6 +881,33 @@
             roundedPanel7.Size = new System.Drawing.Size(1384, 78);
             roundedPanel7.TabIndex = 46;
             // 
+            // InputYearLevel
+            // 
+            InputYearLevel.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            InputYearLevel.BackColor = System.Drawing.Color.White;
+            InputYearLevel.Background_WidthPen = 1F;
+            InputYearLevel.ColorArrow = System.Drawing.Color.FromArgb(29, 78, 216);
+            InputYearLevel.ColorBackground = System.Drawing.Color.White;
+            InputYearLevel.ColorBackground_Pen = System.Drawing.Color.FromArgb(29, 78, 216);
+            InputYearLevel.ColorItemHover = System.Drawing.Color.FromArgb(234, 88, 12);
+            InputYearLevel.ColorPen_1 = System.Drawing.Color.FromArgb(29, 78, 216);
+            InputYearLevel.ColorPen_2 = System.Drawing.Color.FromArgb(37, 52, 68);
+            InputYearLevel.CyberComboBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            InputYearLevel.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            InputYearLevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            InputYearLevel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            InputYearLevel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            InputYearLevel.ForeColor = System.Drawing.Color.FromArgb(30, 41, 59);
+            InputYearLevel.FormattingEnabled = true;
+            InputYearLevel.ItemHeight = 28;
+            InputYearLevel.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
+            InputYearLevel.Location = new System.Drawing.Point(14, 247);
+            InputYearLevel.Name = "InputYearLevel";
+            InputYearLevel.RGB = false;
+            InputYearLevel.Size = new System.Drawing.Size(226, 34);
+            InputYearLevel.TabIndex = 45;
+            InputYearLevel.Timer_RGB = 300;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -959,7 +951,6 @@
         private ReaLTaiizor.Controls.CyberComboBox InputGender;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private ReaLTaiizor.Controls.CyberTextBox InputYearLevel;
         private System.Windows.Forms.Label label6;
         private ReaLTaiizor.Controls.CyberComboBox InputProgram;
         private System.Windows.Forms.Label label7;
@@ -986,5 +977,6 @@
         private ReaLTaiizor.Controls.CyberButton ButtonAdd;
         private ReaLTaiizor.Controls.CyberTextBox InputEmailAccount;
         private System.Windows.Forms.Label label14;
+        private ReaLTaiizor.Controls.CyberComboBox InputYearLevel;
     }
 }
